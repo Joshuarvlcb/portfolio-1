@@ -73,8 +73,8 @@
           align-items: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (300px)[4];
-      grid-template-columns: repeat(4, 300px);
+  -ms-grid-columns: (330px)[3];
+      grid-template-columns: repeat(3, 330px);
   -ms-grid-rows: (440px)[2];
       grid-template-rows: repeat(2, 440px);
   margin-top: 50px;

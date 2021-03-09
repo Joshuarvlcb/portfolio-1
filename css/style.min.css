@@ -529,6 +529,9 @@ header {
   .vid {
     display: none;
   }
+  .skills-container {
+    margin-top: 150px;
+  }
   .gradient {
     background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197), to(#cf631b));
     background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
@@ -633,6 +636,9 @@ header {
   }
   i.val {
     width: 70%;
+  }
+  .skills-container {
+    margin-top: 150px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
