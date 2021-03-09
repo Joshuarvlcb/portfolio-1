@@ -44,7 +44,7 @@ header {
 
 .logo-container {
   position: absolute;
-  top: 45px;
+  top: 50px;
   left: 40px;
 }
 
@@ -61,7 +61,7 @@ header {
 
 .content-box {
   position: absolute;
-  top:48%;
+  top: 40%;
   left: 50%;
   text-transform: uppercase;
   -webkit-transform: translate(-50%, -50%);
@@ -70,7 +70,7 @@ header {
 }
 
 .heading-text {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   line-height: 80px;
 }
 
@@ -127,27 +127,11 @@ header {
   font-size: 1.3rem;
   letter-spacing: 1.5px;
 }
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all .4s;
-}
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
 
 .skills-container {
+  padding-top: 30px;
   height: 130vh;
   width: 100%;
-  padding-bottom: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +156,7 @@ header {
 }
 
 .skills-container .skills-title {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   color: white;
   font-size: 48px;
   font-weight: 900;
@@ -320,7 +304,7 @@ header {
 }
 
 .skills-container .progress-bar-wrap .progress-bar .bootstrap-width {
-  width: 140px;
+  width: 120px;
   height: 35px;
   background-color: #5f0c5f;
   display: -webkit-box;
@@ -368,5 +352,257 @@ header {
 
 .skills-container .progress-bar-wrap .bootstrap {
   background-color: #9b0e9b;
+}
+
+@media only screen and (max-width: 1150px) {
+  .name {
+    display: block;
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 15px;
+    width: 800px;
+  }
+  .title {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 18px;
+    color: #ffffff;
+  }
+  .skills-container {
+    height: 140vh;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .name {
+    display: block;
+    font-size: 55px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 15px;
+    width: 600px;
+  }
+  .title {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: #ffffff;
+  }
+  .logo-container {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .name {
+    display: block;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 10px;
+    width: 500px;
+  }
+  .title {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .name {
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 10px;
+    width: 400px;
+  }
+  .title {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #ffffff;
+    width: 400px;
+  }
+  .heading-text {
+    margin-bottom: 40px;
+    line-height: 60px;
+  }
+  .logo {
+    height: 80px;
+  }
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.1rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    outline: none;
+    font-size: 20px;
+  }
+  .logo-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .name {
+    display: block;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 10px;
+    width: 350px;
+    margin: 0px;
+  }
+  .title {
+    display: block;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #ffffff;
+    width: 350px;
+  }
+  .heading-text {
+    margin-bottom: 40px;
+    line-height: 60px;
+  }
+  .logo {
+    height: 80px;
+  }
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.1rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    outline: none;
+    font-size: 20px;
+  }
+  .logo-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .skills-container {
+    height: 190vh;
+  }
+  .gradient {
+    height: 140%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .name {
+    display: block;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 5px;
+    width: 300px;
+    margin: 0px;
+  }
+  .title {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #ffffff;
+    width: 300px;
+  }
+  .heading-text {
+    margin-bottom: 30px;
+    line-height: 50px;
+  }
+  .logo {
+    height: 80px;
+  }
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.1rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    outline: none;
+    font-size: 20px;
+  }
+  .logo-container {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .name {
+    display: block;
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 5px;
+    width: 280px;
+    margin: 0;
+  }
+  .title {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #ffffff;
+    width: 280px;
+  }
+  .heading-text {
+    margin-bottom: 30px;
+    line-height: 50px;
+  }
+  .logo {
+    height: 70px;
+  }
+  .btn:link,
+  .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8rem 1.3rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    outline: none;
+    font-size: 20px;
+  }
+  .logo-container {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+  .skills-container {
+    height: 200vh;
+  }
+  i.val {
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
