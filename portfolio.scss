@@ -272,3 +272,62 @@ footer {
     }
   }
 }
+@media only screen and (max-width: 1150px) {
+  .card-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 400px);
+    margin-top: 50px;
+    grid-gap: 30px;
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+  }
+  .back-card {
+    width: 300px;
+    height: 400px;
+  }
+  .front-card {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .card-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .card {
+    width: 340px;
+    height: 440px;
+  }
+  .back-card {
+    width: 340px;
+    height: 440px;
+  }
+  .front-card {
+    width: 340px;
+    height: 440px;
+  }
+
+  .portfolio {
+    padding-top: 100px;
+    width: 100%;
+    height: 240vh;
+    position: relative;
+    margin-top: -265px;
+    background-color: rgb(231, 231, 231);
+    clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0% 100%);
+    overflow: hidden;
+  }
+}
