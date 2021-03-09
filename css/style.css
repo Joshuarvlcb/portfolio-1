@@ -460,6 +460,19 @@ header {
 }
 
 @media only screen and (max-width: 450px) {
+  .vid {
+    display: none;
+  }
+  .gradient {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197), to(#cf631b));
+    background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 500px;
+    height: 140%;
+  }
   .name {
     display: block;
     font-size: 40px;
@@ -513,6 +526,19 @@ header {
 }
 
 @media only screen and (max-width: 400px) {
+  .vid {
+    display: none;
+  }
+  .gradient {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197), to(#cf631b));
+    background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 500px;
+    height: 140%;
+  }
   .name {
     display: block;
     font-size: 35px;
@@ -551,12 +577,16 @@ header {
   }
   .logo-container {
     position: absolute;
-    top: 40px;
-    left: 30px;
+    top: 30px;
+    left: 20px;
   }
 }
 
 @media only screen and (max-width: 350px) {
+  .bootstrap-percent {
+    font-size: 16px;
+    padding-left: 10px;
+  }
   .name {
     display: block;
     font-size: 35px;
