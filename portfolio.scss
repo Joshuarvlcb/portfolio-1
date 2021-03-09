@@ -34,12 +34,12 @@
 }
 .portfolio h1 {
   font-size: 43px;
-  color: black;
+  color: #f76451;
   font-weight: 800;
   text-transform: uppercase;
 }
 .projects-title {
-  padding-top: 150px;
+  padding-top: 100px;
   display: block;
   text-align: center;
 }
@@ -298,12 +298,30 @@ footer {
     height: 400px;
   }
 }
+@media only screen and (max-height: 700px) {
+  .projects-title{
+    padding-top: 50px;
+  }
+    .portfolio {
+      padding-top: 100px;
+      width: 100%;
+      height: 250vh;
+      position: relative;
+      margin-top: -300px;
+      background-color: rgb(231, 231, 231);
+      clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+      overflow: hidden;
+    }
+    .skills-container{
+      padding-bottom: 120px;
+    }
+  }
 @media only screen and (max-width: 1150px) {
   .card-container {
-    height: 100vh;
+    height: 460vh;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
   }
@@ -323,11 +341,12 @@ footer {
   .portfolio {
     padding-top: 100px;
     width: 100%;
-    height: 240vh;
+    height: 550vh;
     position: relative;
     margin-top: -265px;
     background-color: rgb(231, 231, 231);
-    clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
     overflow: hidden;
   }
 }
+
