@@ -117,6 +117,12 @@ header {
   letter-spacing: 1.5px;
 }
 
+.about-page {
+  width: 100vw;
+  height: 3000px;
+  background-color: antiquewhite;
+}
+
 .skills-container {
   padding-top: 30px;
   height: 145vh;
