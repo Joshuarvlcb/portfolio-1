@@ -16,14 +16,13 @@ header {
   width: auto;
 }
 .gradient {
-  background-image: linear-gradient(to top left, #8c1197a6 0%, #cf631b9d 100%);
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  padding-top: 500px;
-
   height: 130%;
+  background-image: linear-gradient(to top left, #8c1197a6 0%, #cf631b9d 100%);
+
 }
 .vid {
   position: absolute;
@@ -106,8 +105,35 @@ header {
 
 .about-page{
   width: 100vw;
-height: 3000px;
-background-color: antiquewhite;
+height: 95vh;
+background-color: rgb(231, 231, 231);
+clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+
+  .about-title{
+      text-align: center;
+      display: block;
+      padding-top: 80px;
+    h1{
+      color: rgb(134, 27, 63);
+      font-size: 40px;
+    }
+  }
+.content-about{
+  text-align: center;
+  width: 100%;
+  p{
+    padding: 0 80px;
+      font-family: serif;
+
+
+  }
+  h4{
+    color: rgb(156, 32, 38);
+  }
+}
+.column{
+  padding-top: 50px;
+}
 }
 // body{
 //     font-family: sans-serif;
@@ -206,6 +232,7 @@ background-color: antiquewhite;
   height: 145vh;
   width: 100%;
   display: flex;
+  margin-top: -260px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -426,6 +453,9 @@ background-color: antiquewhite;
 }
 
 @media only screen and (max-width: 550px) {
+  .about-page{
+    height: 110vh;
+  }
   .name {
     display: block;
     font-size: 40px;
@@ -467,6 +497,9 @@ background-color: antiquewhite;
   }
 }
 @media only screen and (max-width: 450px) {
+  .about-page{
+    height: 120vh;
+  }
   .vid {
     display: none;
   }
@@ -523,13 +556,20 @@ background-color: antiquewhite;
 @media only screen and (max-width: 1000px) {
   .skills-container {
     height: 220vh;
+    margin-top: -300px;
   }
   .gradient {
     height: 150%;
   }
+  .about-page{
+    height:110vh;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 405px) {
+  .about-page{
+    height: 130vh;
+  }
   .vid {
     display: none;
   }
@@ -588,10 +628,36 @@ background-color: antiquewhite;
   }
 }
 @media only screen and (max-width: 350px) {
+  .about-page{
+    height: 140vh;
+    .about-title{
+      text-align: center;
+      display: block;
+      padding-top: 80px;
+    h1{
+      color: rgb(134, 27, 63);
+      font-size: 40px;
+    }
+  }
+.content-about{
+  text-align: center;
+  width: 100%;
+  p{
+    padding: 0 80px;
+      font-size: 15px;
+
+  }
+  h4{
+    color: rgb(156, 32, 38);
+  }
+}
+
+  }
   .bootstrap-percent {
     font-size: 16px;
     padding-left: 10px;
   }
+
   .name {
     display: block;
     font-size: 35px;
@@ -637,8 +703,5 @@ background-color: antiquewhite;
   }
   i.val {
     width: 70%;
-  }
-  .skills-container {
-    margin-top: 150px;
   }
 }

@@ -20,13 +20,12 @@ header {
 }
 
 .gradient {
-  background-image: linear-gradient(to top left, #8c1197a6 0%, #cf631b9d 100%);
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  padding-top: 500px;
   height: 130%;
+  background-image: linear-gradient(to top left, #8c1197a6 0%, #cf631b9d 100%);
 }
 
 .vid {
@@ -119,8 +118,38 @@ header {
 
 .about-page {
   width: 100vw;
-  height: 3000px;
-  background-color: antiquewhite;
+  height: 95vh;
+  background-color: #e7e7e7;
+  clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+}
+
+.about-page .about-title {
+  text-align: center;
+  display: block;
+  padding-top: 80px;
+}
+
+.about-page .about-title h1 {
+  color: #861b3f;
+  font-size: 40px;
+}
+
+.about-page .content-about {
+  text-align: center;
+  width: 100%;
+}
+
+.about-page .content-about p {
+  padding: 0 80px;
+  font-family: serif;
+}
+
+.about-page .content-about h4 {
+  color: #9c2026;
+}
+
+.about-page .column {
+  padding-top: 50px;
 }
 
 .skills-container {
@@ -128,6 +157,7 @@ header {
   height: 145vh;
   width: 100%;
   display: flex;
+  margin-top: -260px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -354,6 +384,9 @@ header {
 }
 
 @media only screen and (max-width: 550px) {
+  .about-page {
+    height: 110vh;
+  }
   .name {
     display: block;
     font-size: 40px;
@@ -396,6 +429,9 @@ header {
 }
 
 @media only screen and (max-width: 450px) {
+  .about-page {
+    height: 120vh;
+  }
   .vid {
     display: none;
   }
@@ -453,13 +489,20 @@ header {
 @media only screen and (max-width: 1000px) {
   .skills-container {
     height: 220vh;
+    margin-top: -300px;
   }
   .gradient {
     height: 150%;
   }
+  .about-page {
+    height: 110vh;
+  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 405px) {
+  .about-page {
+    height: 130vh;
+  }
   .vid {
     display: none;
   }
@@ -515,6 +558,29 @@ header {
 }
 
 @media only screen and (max-width: 350px) {
+  .about-page {
+    height: 140vh;
+  }
+  .about-page .about-title {
+    text-align: center;
+    display: block;
+    padding-top: 80px;
+  }
+  .about-page .about-title h1 {
+    color: #861b3f;
+    font-size: 40px;
+  }
+  .about-page .content-about {
+    text-align: center;
+    width: 100%;
+  }
+  .about-page .content-about p {
+    padding: 0 80px;
+    font-size: 15px;
+  }
+  .about-page .content-about h4 {
+    color: #9c2026;
+  }
   .bootstrap-percent {
     font-size: 16px;
     padding-left: 10px;
@@ -564,9 +630,6 @@ header {
   }
   i.val {
     width: 70%;
-  }
-  .skills-container {
-    margin-top: 150px;
   }
 }
 /*# sourceMappingURL=style.css.map */
