@@ -1,37 +1,26 @@
 .card_side {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 2rem;
-  -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
   position: absolute;
   height: 440px;
   top: 0;
   left: 0;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
   width: 300px;
 }
 
 .card:hover .front-card {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card:hover .back-card {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
+  transform: rotateY(0);
 }
 
 .portfolio {
@@ -41,8 +30,7 @@
   position: relative;
   margin-top: -265px;
   background-color: #e7e7e7;
-  -webkit-clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0% 100%);
   overflow: hidden;
 }
 
@@ -62,21 +50,12 @@
 .card-container {
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -ms-grid;
+  justify-content: center;
+  align-items: center;
   display: grid;
-  -ms-grid-columns: (330px)[3];
-      grid-template-columns: repeat(3, 330px);
-  -ms-grid-rows: (440px)[2];
-      grid-template-rows: repeat(2, 440px);
+  grid-template-columns: repeat(3, 330px);
+  grid-template-rows: repeat(2, 440px);
   margin-top: 50px;
   grid-gap: 50px;
 }
@@ -144,15 +123,9 @@
   height: 80px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
 }
 
@@ -161,12 +134,8 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0;
 }
 
@@ -176,12 +145,8 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 22px;
 }
 
@@ -192,12 +157,8 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-right: 8px;
 }
 
@@ -207,16 +168,10 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 115.77px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-right: 25px;
   padding-left: 5px;
 }
@@ -247,24 +202,14 @@
 }
 
 .back-card {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   height: 440px;
   width: 300px;
   background-color: #ff768d;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 30px 0;
 }
 
@@ -274,15 +219,9 @@
   background-color: white;
   border-radius: 30px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: black;
   font-weight: 700;
   font-size: 20px;
@@ -294,66 +233,31 @@
 }
 
 footer .footer {
-  height: 230px;
+  height: 170px;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#ff5f6d), to(#f3ba6a));
   background: linear-gradient(to right, #ff5f6d, #f3ba6a);
 }
 
-footer .footer .logo-mini {
+footer .links-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 30px;
+  justify-content: space-around;
+  height: 170px;
+  align-items: center;
 }
 
-footer .footer .logo-mini img {
-  width: 120px;
-}
-
-footer .footer .logo-mini img:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
-  -webkit-transition: all ease 0.4s;
-  transition: all ease 0.4s;
-}
-
-footer .footer .links-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+footer ul {
+  width: 420px;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 5px;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin-bottom: 0px;
 }
 
-footer .footer ul {
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-top: 2px solid white;
-  padding: 0px;
-  padding-top: 40px;
-}
-
-footer .footer ul a {
-  color: white;
-  text-decoration: none;
-}
-
-footer .footer ul li {
+footer ul li {
   list-style: none;
   cursor: pointer;
   font-size: 20px;
@@ -361,29 +265,21 @@ footer .footer ul li {
   color: white;
 }
 
-footer .footer ul li svg.bi.bi-github {
-  padding-bottom: 40px;
+footer ul .resume {
+  padding-top: 18px;
 }
 
-footer .footer ul li svg.bi.bi-linkedin {
-  padding-bottom: 40px;
-}
-
-footer .footer ul .resume {
-  padding-top: 1.5px;
-}
-
-footer .footer ul .resume button {
-  background-color: white;
-  color: #ff5f6d;
+footer ul .resume button {
+  background-color: black;
+  color: #ee3a49;
   outline: none;
-  padding: 2px 10px;
+  padding: 6px 10px;
   border: none;
   border-radius: 3px;
   text-transform: capitalize;
 }
 
-footer .footer .email {
+footer .email {
   border-top: 2px solid white;
   color: white;
   padding-top: 40px;
@@ -401,8 +297,7 @@ footer .footer .email {
     position: relative;
     margin-top: -300px;
     background-color: #e7e7e7;
-    -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
     overflow: hidden;
   }
   .skills-container {
@@ -412,17 +307,16 @@ footer .footer .email {
 
 @media only screen and (max-height: 900px) {
   .projects-title {
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .portfolio {
     padding-top: 100px;
     width: 100%;
-    height: 200vh;
+    height: 220vh;
     position: relative;
     margin-top: -300px;
     background-color: #e7e7e7;
-    -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
     overflow: hidden;
   }
   .skills-container {
@@ -434,19 +328,10 @@ footer .footer .email {
   .card-container {
     height: 460vh;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
   }
   .card {
     width: 340px;
@@ -463,12 +348,11 @@ footer .footer .email {
   .portfolio {
     padding-top: 100px;
     width: 100%;
-    height: 550vh;
+    height: 530vh;
     position: relative;
     margin-top: -265px;
     background-color: #e7e7e7;
-    -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
     overflow: hidden;
   }
   .portfolio h1 {
@@ -481,92 +365,47 @@ footer .footer .email {
     padding-top: 100px;
   }
   footer .footer {
-    height: 350px;
+    height: 170px;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    background: -webkit-gradient(linear, left top, right top, from(#ff5f6d), to(#f3ba6a));
     background: linear-gradient(to right, #ff5f6d, #f3ba6a);
   }
-  footer .footer .logo-mini {
+  footer .links-container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 30px;
+    justify-content: space-around;
+    height: 170px;
+    align-items: center;
   }
-  footer .footer .logo-mini img {
-    width: 110px;
-    padding-bottom: 10px;
-  }
-  footer .footer .logo-mini img:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-    -webkit-transition: all ease 0.4s;
-    transition: all ease 0.4s;
-  }
-  footer .footer .links-container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
+  footer ul {
+    width: 420px;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-top: 5px;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin-bottom: 0px;
   }
-  footer .footer ul {
-    width: 300px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    border-top: 2px solid white;
-    padding: 0px;
-    padding-top: 40px;
-  }
-  footer .footer ul a {
-    color: white;
-    text-decoration: none;
-  }
-  footer .footer ul li {
+  footer ul li {
     list-style: none;
     cursor: pointer;
     font-size: 20px;
     text-transform: capitalize;
     color: white;
   }
-  footer .footer ul li svg.bi.bi-github {
-    padding-bottom: 40px;
+  footer ul .resume {
+    padding-top: 18px;
   }
-  footer .footer ul li svg.bi.bi-linkedin {
-    padding-bottom: 40px;
-  }
-  footer .footer ul .resume {
-    padding-top: 1.5px;
-  }
-  footer .footer ul .resume button {
-    background-color: white;
-    color: #ff5f6d;
+  footer ul .resume button {
+    background-color: black;
+    color: #ee3a49;
     outline: none;
-    padding: 2px 10px;
+    padding: 6px 10px;
     border: none;
     border-radius: 3px;
     text-transform: capitalize;
   }
-  footer .footer .email {
+  footer .email {
     border-top: 2px solid white;
     color: white;
     padding-top: 40px;
@@ -576,118 +415,96 @@ footer .footer .email {
 
 @media only screen and (max-width: 400px) {
   .projects-title {
-    padding-top: 200px;
+    padding-top: 100px;
   }
   .card {
-    width: 300px;
+    width: 270px;
     height: 400px;
   }
   .back-card {
-    width: 300px;
+    width: 270px;
     height: 400px;
   }
   .front-card {
-    width: 300px;
+    width: 270px;
     height: 400px;
   }
-  .footer {
-    height: 350px;
+  footer .footer {
+    height: 170px;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    background: -webkit-gradient(linear, left top, right top, from(#ff5f6d), to(#f3ba6a));
     background: linear-gradient(to right, #ff5f6d, #f3ba6a);
   }
-  .footer .logo-mini {
+  footer .links-container {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 30px;
+    justify-content: space-around;
+    height: 170px;
+    align-items: center;
   }
-  .footer .logo-mini img {
-    width: 110px;
-    padding-bottom: 10px;
-  }
-  .footer .logo-mini img:hover {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-    -webkit-transition: all ease 0.4s;
-    transition: all ease 0.4s;
-  }
-  .footer .links-container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-top: 5px;
-  }
-  .footer ul {
+  footer ul {
     width: 300px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    border-top: 2px solid white;
-    padding: 0px 20px;
-    padding-top: 40px;
+    justify-content: space-between;
+    padding-left: 0px;
     margin-bottom: 0px;
   }
-  .footer ul a {
-    color: white;
-    text-decoration: none;
-  }
-  .footer ul li {
+  footer ul li {
     list-style: none;
     cursor: pointer;
     font-size: 20px;
     text-transform: capitalize;
     color: white;
   }
-  .footer ul li svg.bi.bi-github {
-    padding-bottom: 40px;
+  footer ul .resume {
+    padding-top: 18px;
   }
-  .footer ul li svg.bi.bi-linkedin {
-    padding-bottom: 40px;
-  }
-  .footer ul .resume {
-    padding-top: 1.5px;
-  }
-  .footer ul .resume button {
-    background-color: white;
-    color: #ff5f6d;
+  footer ul .resume button {
+    background-color: black;
+    color: #ee3a49;
     outline: none;
-    padding: 2px 10px;
+    padding: 6px 10px;
     border: none;
     border-radius: 3px;
     text-transform: capitalize;
   }
-  .footer .email {
+  footer .email {
     border-top: 2px solid white;
     color: white;
     padding-top: 40px;
     font-size: 20px;
   }
-}
-
-@media only screen and (max-width: 360px) {
   .portfolio {
-    height: 605vh;
+    height: 530vh;
+    margin-top: -310px;
+  }
+  .projects-title {
+    padding-top: 120px;
+  }
+  .html.quiz {
+    padding-left: 40px;
+    padding-right: 1px;
+  }
+  .css.quiz {
+    padding: 0px 1px;
+  }
+  .js.quiz {
+    padding: 0 1px;
+  }
+  .tools-container .jquery {
+    border-left: solid 1px black;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    width: 115.77px;
+    justify-content: center;
+    padding-right: 40px;
+    padding-left: 5px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

@@ -36,8 +36,8 @@ header {
 }
 .logo-container {
   position: absolute;
-  top: 50px;
-  left: 40px;
+  top: 20px;
+  left: 10px;
 }
 .logo {
   height: 100px;
@@ -48,7 +48,7 @@ header {
 }
 .content-box {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
@@ -441,7 +441,7 @@ header {
     line-height: 60px;
   }
   .logo {
-    height: 80px;
+    height: 60px;
   }
   .btn:link,
   .btn:visited {
@@ -495,7 +495,7 @@ header {
     line-height: 60px;
   }
   .logo {
-    height: 80px;
+    height: 55px;
   }
   .btn:link,
   .btn:visited {
@@ -562,7 +562,7 @@ header {
     line-height: 50px;
   }
   .logo {
-    height: 80px;
+    height: 40px;
   }
   .btn:link,
   .btn:visited {
@@ -608,7 +608,7 @@ header {
     line-height: 50px;
   }
   .logo {
-    height: 70px;
+    height: 40px;
   }
   .btn:link,
   .btn:visited {
