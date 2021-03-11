@@ -58,11 +58,20 @@
 .heading-text h3.mastermind {
   color: rgb(19, 141, 182);
 }
+.heading-text h3.todo {
+  color: rgb(145, 28, 110);
+}
 .card-header.mastermind {
   background-image: url(mastermind-picture.png);
 }
+.card-header.todo {
+  background-image: url(todo-final.png);
+}
 .tools-container.mastermind-color {
   background-color: rgb(19, 141, 182);
+}
+.tools-container.todo-color {
+  background-color: rgb(130, 19, 182);
 }
 .card {
   position: relative;
