@@ -10,6 +10,7 @@ html {
 }
 body {
   font-family: "Fira Sans", sans-serif;
+  overflow-x: hidden;
 }
 header {
   height: 100vh;
@@ -22,7 +23,6 @@ header {
   width: 100%;
   height: 130%;
   background-image: linear-gradient(to top left, #8c1197a6 0%, #cf631b9d 100%);
-
 }
 .vid {
   position: absolute;
@@ -102,38 +102,40 @@ header {
   letter-spacing: 1.5px;
 }
 
-
-.about-page{
+.about-page {
   width: 100vw;
-height: 95vh;
-background-color: rgb(231, 231, 231);
-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
-
-  .about-title{
-      text-align: center;
-      display: block;
-      padding-top: 80px;
-    h1{
+  height: 95vh;
+  background-color: rgb(231, 231, 231);
+  clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+  .about-title {
+    text-align: center;
+    display: block;
+    padding-top: 100px;
+    h1 {
       color: rgb(134, 27, 63);
       font-size: 40px;
     }
   }
-.content-about{
-  text-align: center;
-  width: 100%;
-  p{
-    padding: 0 80px;
+  .content-about {
+    text-align: center;
+    width: 100%;
+    padding-top: 30px;
+    p {
+      padding: 0 80px;
       font-family: serif;
-
-
+    }
+    h4 {
+      color: rgb(156, 32, 38);
+    }
   }
-  h4{
-    color: rgb(156, 32, 38);
+  .column {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-}
-.column{
-  padding-top: 50px;
-}
 }
 // body{
 //     font-family: sans-serif;
@@ -404,7 +406,6 @@ clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
 }
 
 @media only screen and (max-width: 750px) {
-
   .name {
     display: block;
     font-size: 55px;
@@ -425,7 +426,7 @@ clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
     top: 40px;
     left: 30px;
   }
-  
+
   .skills-title {
     margin-top: 100px;
     color: rgb(255, 255, 255);
@@ -453,7 +454,7 @@ clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
 }
 
 @media only screen and (max-width: 550px) {
-  .about-page{
+  .about-page {
     height: 110vh;
   }
   .name {
@@ -497,7 +498,7 @@ clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
   }
 }
 @media only screen and (max-width: 450px) {
-  .about-page{
+  .about-page {
     height: 120vh;
   }
   .vid {
@@ -561,13 +562,13 @@ clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
   .gradient {
     height: 150%;
   }
-  .about-page{
-    height:110vh;
+  .about-page {
+    height: 110vh;
   }
 }
 
 @media only screen and (max-width: 405px) {
-  .about-page{
+  .about-page {
     height: 130vh;
   }
   .vid {
@@ -628,30 +629,28 @@ clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
   }
 }
 @media only screen and (max-width: 350px) {
-  .about-page{
+  .about-page {
     height: 140vh;
-    .about-title{
+    .about-title {
       text-align: center;
       display: block;
       padding-top: 80px;
-    h1{
-      color: rgb(134, 27, 63);
-      font-size: 40px;
+      h1 {
+        color: rgb(134, 27, 63);
+        font-size: 40px;
+      }
     }
-  }
-.content-about{
-  text-align: center;
-  width: 100%;
-  p{
-    padding: 0 80px;
-      font-size: 15px;
-
-  }
-  h4{
-    color: rgb(156, 32, 38);
-  }
-}
-
+    .content-about {
+      text-align: center;
+      width: 100%;
+      p {
+        padding: 0 80px;
+        font-size: 15px;
+      }
+      h4 {
+        color: rgb(156, 32, 38);
+      }
+    }
   }
   .bootstrap-percent {
     font-size: 16px;
@@ -703,5 +702,27 @@ clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
   }
   i.val {
     width: 70%;
+  }
+}
+
+@media only screen and (min-height: 950px) {
+  .projects-title {
+    padding-top: 30px;
+  }
+  .portfolio {
+    padding-top: 100px;
+    width: 100%;
+    height: 180vh;
+    position: relative;
+    margin-top: -300px;
+    background-color: rgb(231, 231, 231);
+    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    overflow: hidden;
+  }
+  .skills-container {
+    padding-bottom: 120px;
+  }
+  .about-page {
+    height: 80vh;
   }
 }
