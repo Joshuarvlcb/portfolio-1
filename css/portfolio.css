@@ -307,14 +307,14 @@ footer .email {
   color: #ffffff;
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 800px) {
   .projects-title {
     padding-top: 50px;
   }
   .portfolio {
     padding-top: 100px;
     width: 100%;
-    height: 250vh;
+    height: 200vh;
     position: relative;
     margin-top: -300px;
     background-color: #e7e7e7;
@@ -333,7 +333,7 @@ footer .email {
   .portfolio {
     padding-top: 100px;
     width: 100%;
-    height: 220vh;
+    height: 200vh;
     position: relative;
     margin-top: -300px;
     background-color: #e7e7e7;
