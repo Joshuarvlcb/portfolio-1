@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -26,6 +27,7 @@ header {
   top: 0;
   width: 100%;
   height: 130%;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197a6), to(#cf631b9d));
   background-image: linear-gradient(to top left, #8c1197a6 0%, #cf631b9d 100%);
 }
 
@@ -33,7 +35,8 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 100%;
   height: 100%;
   z-index: -3;
@@ -50,7 +53,9 @@ header {
 }
 
 .logo:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -59,7 +64,8 @@ header {
   top: 45%;
   left: 50%;
   text-transform: uppercase;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -92,20 +98,25 @@ header {
   padding: 1.3rem 2.6rem;
   display: inline-block;
   border-radius: 10rem;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   outline: none;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   color: black;
   outline: none;
 }
 
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
   outline: none;
 }
 
@@ -121,7 +132,8 @@ header {
   width: 100vw;
   height: 100vh;
   background-color: #e7e7e7;
-  clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
 }
 
 .about-page .about-title {
@@ -153,27 +165,47 @@ header {
 .about-page .column {
   height: 50%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .skills-container {
   padding-top: 30px;
   height: 145vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: -260px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(20, 20, 20, 0.795)), to(rgba(34, 34, 34, 0.801))), url(https://images.pexels.com/photos/1089194/pexels-photo-1089194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-image: linear-gradient(to right, rgba(20, 20, 20, 0.795), rgba(34, 34, 34, 0.801)), url(https://images.pexels.com/photos/1089194/pexels-photo-1089194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;
   background-size: cover;
   background-color: #e2e2e2;
   color: black;
-  clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
 }
 
 .skills-container .skills-title {
@@ -204,9 +236,13 @@ header {
   font-weight: 500;
   font-weight: 500;
   font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-right: 10px;
 }
 
@@ -222,6 +258,7 @@ header {
 
 .skills-container .progress-bar-wrap .progress-bar {
   height: 35px;
+  -webkit-transition: 0.9s;
   transition: 0.9s;
   background-color: #4ac74a;
   border-radius: 0px;
@@ -231,36 +268,60 @@ header {
   width: 100px;
   height: 35px;
   background-color: #2d0831;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .jquery-width {
   width: 100px;
   height: 35px;
   background-color: #092f46;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .html-width {
   width: 90px;
   height: 35px;
   background-color: #9e5a16;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .css-width {
   width: 90px;
   height: 35px;
   background-color: #214dac;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   margin: 0;
 }
@@ -269,33 +330,57 @@ header {
   width: 50px;
   height: 35px;
   background-color: #c4b215;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .sass-width {
   width: 80px;
   height: 35px;
   background-color: #b17b84;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .bootstrap-width {
   width: 120px;
   height: 35px;
   background-color: #5f0c5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap i {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .html {
@@ -320,6 +405,29 @@ header {
 
 .skills-container .progress-bar-wrap .bootstrap {
   background-color: #9b0e9b;
+}
+
+@media only screen and (min-height: 950px) {
+  .projects-title {
+    padding-top: 30px;
+  }
+  .portfolio {
+    padding-top: 100px;
+    width: 100%;
+    height: 180vh;
+    position: relative;
+    margin-top: -300px;
+    background-color: #e7e7e7;
+    -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    overflow: hidden;
+  }
+  .skills-container {
+    padding-bottom: 120px;
+  }
+  .about-page {
+    height: 85vh;
+  }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -424,6 +532,7 @@ header {
     padding: 1.1rem 2rem;
     display: inline-block;
     border-radius: 10rem;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -443,6 +552,7 @@ header {
     display: none;
   }
   .gradient {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197), to(#cf631b));
     background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
     position: absolute;
     left: 0;
@@ -482,6 +592,7 @@ header {
     padding: 1.1rem 2rem;
     display: inline-block;
     border-radius: 10rem;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -496,10 +607,9 @@ header {
 @media only screen and (max-width: 1000px) {
   .skills-container {
     height: 220vh;
-    margin-top: -300px;
-  }
-  .gradient {
-    height: 150%;
+    margin-top: -340px;
+    -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
   }
   .about-page {
     height: 110vh;
@@ -508,12 +618,13 @@ header {
 
 @media only screen and (max-width: 405px) {
   .about-page {
-    height: 130vh;
+    height: 140vh;
   }
   .vid {
     display: none;
   }
   .gradient {
+    background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197), to(#cf631b));
     background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
     position: absolute;
     left: 0;
@@ -553,6 +664,7 @@ header {
     padding: 1.1rem 2rem;
     display: inline-block;
     border-radius: 10rem;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -566,7 +678,7 @@ header {
 
 @media only screen and (max-width: 350px) {
   .about-page {
-    height: 140vh;
+    height: 95vh;
   }
   .about-page .about-title {
     text-align: center;
@@ -623,6 +735,7 @@ header {
     padding: 0.8rem 1.3rem;
     display: inline-block;
     border-radius: 10rem;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -637,28 +750,6 @@ header {
   }
   i.val {
     width: 70%;
-  }
-}
-
-@media only screen and (min-height: 950px) {
-  .projects-title {
-    padding-top: 30px;
-  }
-  .portfolio {
-    padding-top: 100px;
-    width: 100%;
-    height: 180vh;
-    position: relative;
-    margin-top: -300px;
-    background-color: #e7e7e7;
-    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
-    overflow: hidden;
-  }
-  .skills-container {
-    padding-bottom: 120px;
-  }
-  .about-page {
-    height: 80vh;
   }
 }
 /*# sourceMappingURL=style.min.css.map */
