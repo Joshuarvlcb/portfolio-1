@@ -163,7 +163,7 @@ header {
 }
 
 .about-page .column {
-  height: 50%;
+  height: 35%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,6 +496,15 @@ header {
     letter-spacing: 5px;
     color: #ffffff;
   }
+  .about-page .column {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -547,6 +556,19 @@ header {
 @media only screen and (max-width: 450px) {
   .about-page {
     height: 120vh;
+  }
+  .about-page .about-title {
+    text-align: center;
+    display: block;
+    padding-top: 70px;
+  }
+  .about-page .column {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .vid {
     display: none;
@@ -679,6 +701,15 @@ header {
 @media only screen and (max-width: 350px) {
   .about-page {
     height: 95vh;
+  }
+
+  .about-page .column {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .about-page .about-title {
     text-align: center;
