@@ -21,8 +21,8 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 130%;
+  width: 100vw;
+  height: 110%;
   background-image: linear-gradient(to top left, #8c1197a6 0%, #cf631b9d 100%);
 }
 .vid {
@@ -105,13 +105,19 @@ header {
 
 .about-page {
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   background-color: rgb(231, 231, 231);
   clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10vh;
   .about-title {
-    text-align: center;
-    display: block;
-    padding-top: 100px;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     h1 {
       color: rgb(134, 27, 63);
       font-size: 40px;
@@ -120,7 +126,6 @@ header {
   .content-about {
     text-align: center;
     width: 100%;
-    padding-top: 30px;
     p {
       padding: 0 80px;
       font-family: serif;
@@ -130,10 +135,11 @@ header {
     }
   }
   .column {
-    height: 50%;
+    margin-top: 50px;
+    height: 80%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
   }
@@ -171,7 +177,7 @@ header {
 // #landing{
 //     width: 100%;
 //     height:100vh;
-//     background: url(https://images.pexels.com/photos/432360/pexels-photo-432360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+//     background: url(https://imageslexels.com/photos/432360/pexels-photo-432360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 //     background-repeat: no-repeat;
 //     position: relative;
 //     background-size: cover;
@@ -233,7 +239,7 @@ header {
 .skills-container {
   padding-top: 30px;
   height: 145vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   margin-top: -268px;
   justify-content: center;
@@ -249,7 +255,7 @@ header {
   background-size: cover;
   background-color: rgb(226, 226, 226);
   color: rgb(0, 0, 0);
-  clip-path: polygon(0 0, 100% 19%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 
   .skills-title {
     margin-bottom: 100px;
@@ -385,27 +391,6 @@ header {
     }
   }
 }
-@media only screen and (min-height: 950px) {
-  .projects-title {
-    padding-top: 30px;
-  }
-  .portfolio {
-    padding-top: 100px;
-    width: 100%;
-    height: 180vh;
-    position: relative;
-    margin-top: -300px;
-    background-color: rgb(231, 231, 231);
-    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
-    overflow: hidden;
-  }
-  .skills-container {
-    padding-bottom: 120px;
-  }
-  .about-page {
-    height: 85vh;
-  }
-}
 
 @media only screen and (max-width: 1150px) {
   .name {
@@ -428,7 +413,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 780px) {
   .name {
     display: block;
     font-size: 55px;
@@ -457,7 +442,16 @@ header {
     font-weight: 900;
   }
 }
-
+@media only screen and (max-width: 1000px) {
+  .skills-container {
+    height: 220vh;
+    margin-top: -300px;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+  }
+  .about-page {
+    height: 70vh;
+  }
+}
 @media only screen and (max-width: 650px) {
   .name {
     display: block;
@@ -474,11 +468,14 @@ header {
     letter-spacing: 5px;
     color: #ffffff;
   }
+  .about-page {
+    height: 75vh;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   .about-page {
-    height: 110vh;
+    height: 80vh;
   }
   .name {
     display: block;
@@ -522,7 +519,7 @@ header {
 }
 @media only screen and (max-width: 450px) {
   .about-page {
-    height: 120vh;
+    min-height: 100vh;
   }
   .vid {
     display: none;
@@ -557,14 +554,12 @@ header {
     margin-bottom: 40px;
     line-height: 60px;
   }
-  .logo {
-    height: 55px;
-  }
+
   .btn:link,
   .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.1rem 2rem;
+    padding: 0.9rem 2rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
@@ -577,20 +572,10 @@ header {
     left: 20px;
   }
 }
-@media only screen and (max-width: 1000px) {
-  .skills-container {
-    height: 220vh;
-    margin-top: -340px;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
-  }
-  .about-page {
-    height: 110vh;
-  }
-}
 
 @media only screen and (max-width: 405px) {
   .about-page {
-    height: 140vh;
+    min-height: 135vh;
   }
   .vid {
     display: none;
@@ -629,14 +614,12 @@ header {
     margin-bottom: 30px;
     line-height: 50px;
   }
-  .logo {
-    height: 40px;
-  }
+
   .btn:link,
   .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.1rem 2rem;
+    padding: 0.9rem 2rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
@@ -651,11 +634,8 @@ header {
 }
 @media only screen and (max-width: 350px) {
   .about-page {
-    height: 95vh;
+    min-height: 160vh;
     .about-title {
-      text-align: center;
-      display: block;
-      padding-top: 80px;
       h1 {
         color: rgb(134, 27, 63);
         font-size: 40px;
@@ -699,14 +679,12 @@ header {
     margin-bottom: 30px;
     line-height: 50px;
   }
-  .logo {
-    height: 40px;
-  }
+
   .btn:link,
   .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0.8rem 1.3rem;
+    padding: 0.9rem 1.3rem;
     display: inline-block;
     border-radius: 10rem;
     transition: all 0.2s;
