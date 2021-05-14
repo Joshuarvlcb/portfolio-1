@@ -318,7 +318,7 @@
 
 .back-card .button a {
   text-decoration: none;
-  color: white;
+  color: lightcoral;
 }
 
 footer .footer {
@@ -370,7 +370,7 @@ footer ul .resume {
 
 footer ul .resume button {
   background-color: black;
-  color: #ffffff;
+  color: #ee3a49;
   outline: none;
   padding: 6px 10px;
   border: none;
@@ -386,7 +386,7 @@ footer .email {
 }
 
 .resume-btn {
-  color: #ffffff;
+  color: #ee3a49;
   text-decoration: none;
 }
 

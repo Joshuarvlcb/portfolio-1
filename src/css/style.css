@@ -44,12 +44,12 @@ header {
 
 .logo-container {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 20px;
 }
 
 .logo {
-  height: 85px;
+  height: 100px;
 }
 
 .logo:hover {
@@ -130,7 +130,6 @@ header {
 
 .about-page {
   width: 100vw;
-  max-width: 1600px;
   height: 60vh;
   background-color: #e7e7e7;
   -webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);

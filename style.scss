@@ -36,11 +36,11 @@ header {
 }
 .logo-container {
   position: absolute;
-  top: 20px;
-  left: 10px;
+  top: 30px;
+  left: 20px;
 }
 .logo {
-  height: 100px;
+  height: 85px;
 }
 .logo:hover {
   transform: scale(1.2);
@@ -104,7 +104,9 @@ header {
 }
 
 .about-page {
+
   width: 100vw;
+  max-width: 1600px;
   height: 60vh;
   background-color: rgb(231, 231, 231);
   clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
@@ -703,3 +705,13 @@ header {
     width: 70%;
   }
 }
+//add parials
+//footer needs to be smaller
+//make skills page responsive
+//make the page faster the video is making it slower
+//the resume button does not look nice change it to match the site
+//add border radius to the progress bars
+//make the projects page more responsive
+//make about page nicer and responsive
+
+
