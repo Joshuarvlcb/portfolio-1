@@ -104,6 +104,8 @@ header {
 }
 
 .about-page {
+  position: relative;
+  z-index: 200;
   width: 100vw;
   height: 60vh;
   background-color: rgb(231, 231, 231);
@@ -112,7 +114,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 10vh;
   .about-title {
     height: 20%;
     display: flex;
@@ -237,11 +238,10 @@ header {
 //     }
 // }
 .skills-container {
-  padding-top: 30px;
   height: 145vh;
   width: 100vw;
   display: flex;
-  margin-top: -268px;
+  // margin-top: -268px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -255,7 +255,7 @@ header {
   background-size: cover;
   background-color: rgb(226, 226, 226);
   color: rgb(0, 0, 0);
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  // clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 
   .skills-title {
     margin-bottom: 100px;
