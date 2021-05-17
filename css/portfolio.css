@@ -117,7 +117,7 @@
 .card {
   position: relative;
   height: 440px;
-  width: 300px;
+  min-width: 290px;
   background-color: #e7e7e7;
   border-radius: 5px;
   border: none;
@@ -271,7 +271,7 @@
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   height: 440px;
-  width: 300px;
+  min-width: 290px;
   background-color: #ff768d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,7 +311,7 @@
 
 .back-card .button a {
   text-decoration: none;
-  color: white;
+  color: #ff768d;
 }
 
 footer .footer {
@@ -338,7 +338,7 @@ footer .links-container {
 }
 
 footer ul {
-  width: 420px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
