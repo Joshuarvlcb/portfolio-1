@@ -3,8 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -26,8 +25,7 @@ header {
   left: 0;
   top: 0;
   width: 100vw;
-  height: 110%;
-  background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197a6), to(#cf631b9d));
+  height: 100%;
   background-image: linear-gradient(to top left, #8c1197a6 0%, #cf631b9d 100%);
 }
 
@@ -35,8 +33,7 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   width: 100%;
   height: 100%;
   z-index: -3;
@@ -44,18 +41,16 @@ header {
 
 .logo-container {
   position: absolute;
-  top: 20px;
-  left: 10px;
+  top: 30px;
+  left: 20px;
 }
 
 .logo {
-  height: 100px;
+  height: 85px;
 }
 
 .logo:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all 0.4s;
+  transform: scale(1.2);
   transition: all 0.4s;
 }
 
@@ -64,8 +59,7 @@ header {
   top: 45%;
   left: 50%;
   text-transform: uppercase;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -98,25 +92,20 @@ header {
   padding: 1.3rem 2.6rem;
   display: inline-block;
   border-radius: 10rem;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   outline: none;
 }
 
 .btn:hover {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   color: black;
   outline: none;
 }
 
 .btn:active {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
   outline: none;
 }
 
@@ -130,107 +119,72 @@ header {
 
 .about-page {
   width: 100vw;
-  height: 60vh;
+  min-height: 90vh;
   background-color: #e7e7e7;
-  -webkit-clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 9%, 100% 100%, 0% 100%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 10vh;
 }
 
 .about-page .about-title {
-  height: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
 }
 
 .about-page .about-title h1 {
-  color: #861b3f;
+  color: #941478;
   font-size: 40px;
 }
 
+.about-page .con {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about-page .colCon {
+  height: 80vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .about-page .content-about {
-  text-align: center;
-  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .about-page .content-about p {
-  padding: 0 80px;
-  font-family: serif;
+  margin-bottom: 30px;
+  font-size: 1.2em;
 }
 
-.about-page .content-about h4 {
-  color: #9c2026;
-}
-
-.about-page .column {
-  margin-top: 50px;
-  height: 80%;
+.about-page .content-about h5 {
+  text-align: center;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  color: #b132b1;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .skills-container {
-  padding-top: 30px;
   height: 145vh;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  margin-top: -268px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(20, 20, 20, 0.795)), to(rgba(34, 34, 34, 0.801))), url(https://images.pexels.com/photos/1089194/pexels-photo-1089194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-image: linear-gradient(to right, rgba(20, 20, 20, 0.795), rgba(34, 34, 34, 0.801)), url(https://images.pexels.com/photos/1089194/pexels-photo-1089194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;
   background-size: cover;
   background-color: #e2e2e2;
   color: black;
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
 
 .skills-container .skills-title {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   color: white;
   font-size: 48px;
   font-weight: 900;
@@ -257,13 +211,9 @@ header {
   font-weight: 500;
   font-weight: 500;
   font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-right: 10px;
 }
 
@@ -274,75 +224,48 @@ header {
 
 .skills-container .progress-bar-wrap {
   background: white;
-  border-radius: 0px;
 }
 
 .skills-container .progress-bar-wrap .progress-bar {
   height: 35px;
-  -webkit-transition: 0.9s;
   transition: 0.9s;
   background-color: #4ac74a;
-  border-radius: 0px;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .jquery-width {
   width: 100px;
   height: 35px;
   background-color: #2d0831;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .jquery-width {
   width: 100px;
   height: 35px;
   background-color: #092f46;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .html-width {
   width: 90px;
   height: 35px;
   background-color: #9e5a16;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .css-width {
   width: 90px;
   height: 35px;
   background-color: #214dac;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   margin: 0;
 }
@@ -351,57 +274,33 @@ header {
   width: 50px;
   height: 35px;
   background-color: #c4b215;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .sass-width {
   width: 80px;
   height: 35px;
   background-color: #b17b84;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .bootstrap-width {
   width: 120px;
   height: 35px;
   background-color: #5f0c5f;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-container .progress-bar-wrap i {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .html {
@@ -428,6 +327,10 @@ header {
   background-color: #9b0e9b;
 }
 
+.node {
+  width: 40%;
+}
+
 @media only screen and (max-width: 1150px) {
   .name {
     display: block;
@@ -445,7 +348,7 @@ header {
     color: #ffffff;
   }
   .skills-container {
-    height: 140vh;
+    height: 180vh;
   }
 }
 
@@ -479,12 +382,6 @@ header {
 }
 
 @media only screen and (max-width: 1000px) {
-  .skills-container {
-    height: 220vh;
-    margin-top: -300px;
-    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
-  }
   .about-page {
     height: 70vh;
   }
@@ -507,11 +404,65 @@ header {
     color: #ffffff;
   }
   .about-page {
-    height: 75vh;
+    width: 100vw;
+    min-height: 90vh;
+    background-color: #e7e7e7;
+  }
+  .about-page .icons {
+    width: 100%;
+  }
+  .about-page .icons img {
+    width: 120px;
+  }
+  .about-page .about-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .about-page .about-title h1 {
+    color: #941478;
+    font-size: 40px;
+  }
+  .about-page .con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about-page .colCon {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .about-page .content-about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about-page .content-about p {
+    padding: 0 30px;
+    margin-bottom: 30px;
+    font-size: .9em;
+    text-align: center;
+  }
+  .about-page .content-about h5 {
+    text-align: center;
+    width: 100%;
+    color: #b132b1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
   }
 }
 
 @media only screen and (max-width: 550px) {
+  .node {
+    width: 50%;
+  }
   .about-page {
     height: 80vh;
   }
@@ -545,7 +496,6 @@ header {
     padding: 1.1rem 2rem;
     display: inline-block;
     border-radius: 10rem;
-    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -558,21 +508,17 @@ header {
 }
 
 @media only screen and (max-width: 450px) {
-  .about-page {
-    min-height: 100vh;
-  }
   .vid {
     display: none;
   }
   .gradient {
-    background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197), to(#cf631b));
     background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     padding-top: 500px;
-    height: 190%;
+    height: 100%;
   }
   .name {
     display: block;
@@ -602,7 +548,6 @@ header {
     padding: 0.9rem 2rem;
     display: inline-block;
     border-radius: 10rem;
-    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -615,21 +560,8 @@ header {
 }
 
 @media only screen and (max-width: 405px) {
-  .about-page {
-    min-height: 135vh;
-  }
   .vid {
     display: none;
-  }
-  .gradient {
-    background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197), to(#cf631b));
-    background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding-top: 500px;
-    height: 190%;
   }
   .name {
     display: block;
@@ -659,7 +591,6 @@ header {
     padding: 0.9rem 2rem;
     display: inline-block;
     border-radius: 10rem;
-    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -671,29 +602,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 350px) {
-  .about-page {
-    min-height: 160vh;
-  }
-  .about-page .about-title h1 {
-    color: #861b3f;
-    font-size: 40px;
-  }
-  .about-page .content-about {
-    text-align: center;
-    width: 100%;
-  }
-  .about-page .content-about p {
-    padding: 0 80px;
-    font-size: 15px;
-  }
-  .about-page .content-about h4 {
-    color: #9c2026;
-  }
-  .bootstrap-percent {
-    font-size: 16px;
-    padding-left: 10px;
-  }
+@media only screen and (max-width: 360px) {
   .name {
     display: block;
     font-size: 35px;
@@ -722,7 +631,6 @@ header {
     padding: 0.9rem 1.3rem;
     display: inline-block;
     border-radius: 10rem;
-    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -733,10 +641,52 @@ header {
     left: 20px;
   }
   .skills-container {
-    height: 220vh;
+    height: 200vh;
   }
-  i.val {
-    width: 70%;
+  .about-page {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #e7e7e7;
+  }
+  .about-page .icons img {
+    width: 80px;
+  }
+  .about-page .about-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+  }
+  .about-page .about-title h1 {
+    color: #941478;
+    font-size: 40px;
+  }
+  .about-page .con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about-page .colCon {
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  .about-page .content-about p {
+    padding: 0 20px;
+    margin-bottom: 30px;
+    font-size: .8em;
+    text-align: center;
+  }
+  .about-page .content-about h5 {
+    text-align: center;
+    width: 100%;
+    color: #b132b1;
+    text-transform: uppercase;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
