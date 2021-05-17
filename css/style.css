@@ -130,7 +130,6 @@ header {
 
 .about-page {
   width: 100vw;
-  min-height: 65vh;
   background-color: #e7e7e7;
   position: relative;
 }
@@ -154,7 +153,7 @@ header {
 }
 
 .about-page .con {
-  margin-top: 5.5vh;
+  margin-top: 3vh;
 }
 
 .about-page .content-about p {
@@ -445,12 +444,6 @@ header {
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .about-page {
-    height: 70vh;
-  }
-}
-
 @media only screen and (max-width: 650px) {
   .name {
     display: block;
@@ -558,7 +551,7 @@ header {
     width: 50%;
   }
   .about-page {
-    height: 80vh;
+    min-height: 90vh;
   }
   .name {
     display: block;
@@ -702,7 +695,7 @@ header {
 
 @media only screen and (max-width: 360px) {
   .about-page {
-    height: 85vh;
+    min-height: 110vh;
   }
   .name {
     display: block;
