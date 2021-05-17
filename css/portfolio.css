@@ -1,26 +1,37 @@
 .card_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
   font-size: 2rem;
+  -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
   position: absolute;
   height: 440px;
   top: 0;
   left: 0;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
   width: 300px;
 }
 
 .card:hover .front-card {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .card:hover .back-card {
-  transform: rotateY(0);
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
 }
 
 .portfolio {
@@ -48,12 +59,21 @@
 .card-container {
   height: 100vh;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 330px);
-  grid-template-rows: repeat(2, 440px);
+  -ms-grid-columns: (330px)[3];
+      grid-template-columns: repeat(3, 330px);
+  -ms-grid-rows: (440px)[2];
+      grid-template-rows: repeat(2, 440px);
   margin-top: 50px;
   grid-gap: 50px;
 }
@@ -149,9 +169,15 @@
   height: 80px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
 }
 
@@ -160,8 +186,12 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
 }
 
@@ -171,8 +201,12 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 22px;
 }
 
@@ -183,8 +217,12 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-right: 8px;
 }
 
@@ -194,10 +232,16 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 115.77px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-right: 20px;
   padding-left: 15px;
 }
@@ -228,14 +272,24 @@
 }
 
 .back-card {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   height: 440px;
   width: 300px;
   background-color: #ff768d;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 0;
 }
 
@@ -245,9 +299,15 @@
   background-color: white;
   border-radius: 30px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: black;
   font-weight: 700;
   font-size: 20px;
@@ -264,21 +324,31 @@ footer .footer {
   position: absolute;
   bottom: 0;
   left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#ff5f6d), to(#f3ba6a));
   background: linear-gradient(to right, #ff5f6d, #f3ba6a);
 }
 
 footer .links-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 130px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer ul {
   width: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 0px;
   margin-bottom: 0px;
 }
@@ -343,14 +413,24 @@ large screens
   .card-container {
     height: 240vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .portfolio {
     height: 290vh;
-    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
@@ -359,14 +439,24 @@ large screens
   .card-container {
     height: 260vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .portfolio {
     height: 320vh;
-    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
@@ -375,14 +465,24 @@ large screens
   .card-container {
     height: 280vh;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .portfolio {
     height: 340vh;
-    clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 6%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 

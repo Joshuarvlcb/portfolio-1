@@ -105,9 +105,9 @@ header {
 
 .about-page {
   width: 100vw;
-  min-height:90vh;
+  min-height: 65vh;
   background-color: #e7e7e7;
-  
+  position: relative;
 
   .about-title {
     display: flex;
@@ -119,24 +119,10 @@ header {
       font-size: 40px;
     }
   }
-.con{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-  .colCon {
-    height: 80vh;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  .con {
+    margin-top: 5.5vh;
   }
   .content-about {
-    display: flex;
-    align-items: flex-start;
-
-    flex-direction: column;
     p {
       // padding: 0 80px;
       margin-bottom: 30px;
@@ -304,7 +290,7 @@ header {
     }
   }
 }
-.node{
+.node {
   width: 40%;
 }
 @media only screen and (max-width: 1150px) {
@@ -324,7 +310,7 @@ header {
     color: #ffffff;
   }
   .skills-container {
-   height: 180vh;
+    height: 180vh;
   }
 }
 
@@ -358,13 +344,11 @@ header {
   }
 }
 @media only screen and (max-width: 1000px) {
-
   .about-page {
     height: 70vh;
   }
 }
 @media only screen and (max-width: 650px) {
-
   .name {
     display: block;
     font-size: 50px;
@@ -383,17 +367,15 @@ header {
 
   .about-page {
     width: 100vw;
-    min-height:90vh;
+    min-height: 70vh;
     background-color: #e7e7e7;
-    
-  .icons{
-    width: 100%;
-    img{
-      width: 120px;
-     
+
+    .icons {
+      width: 100%;
+      img {
+        width: 120px;
+      }
     }
-  
-  }
     .about-title {
       display: flex;
       align-items: center;
@@ -404,12 +386,11 @@ header {
         font-size: 40px;
       }
     }
-  .con{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
+    .con {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     .colCon {
       height: 50vh;
       width: 100%;
@@ -426,8 +407,8 @@ header {
       p {
         padding: 0 30px;
         margin-bottom: 30px;
-        font-size: .9em;
-      text-align: center;
+        font-size: 0.9em;
+        text-align: center;
       }
       h5 {
         text-align: center;
@@ -438,14 +419,12 @@ header {
       }
     }
   }
-
 }
 
 @media only screen and (max-width: 550px) {
-  
-.node{
-  width: 50%;
-}
+  .node {
+    width: 50%;
+  }
   .about-page {
     height: 80vh;
   }
@@ -490,9 +469,6 @@ header {
   }
 }
 @media only screen and (max-width: 450px) {
-
-
-
   .vid {
     display: none;
   }
@@ -546,12 +522,10 @@ header {
 }
 
 @media only screen and (max-width: 405px) {
- 
   .vid {
     display: none;
   }
-  
-  
+
   .name {
     display: block;
     font-size: 35px;
@@ -592,6 +566,9 @@ header {
   }
 }
 @media only screen and (max-width: 360px) {
+  .about-page {
+    height: 85vh;
+  }
   .name {
     display: block;
     font-size: 35px;
@@ -633,55 +610,11 @@ header {
   .skills-container {
     height: 200vh;
   }
-  
+
   .about-page {
-    width: 100vw;
-    min-height:100vh;
-    background-color: #e7e7e7;
-    .icons{
-      img{
-        width: 80px;
-      }
-    }
-  
-    .about-title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 35px;
-      h1 {
-        color: rgb(148, 20, 120);
-        font-size: 40px;
-      }
-    }
-  .con{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-    .colCon {
-      height: 55vh;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      flex-direction: column;
-    }
-    .content-about {
-    
-      p {
-        padding: 0 20px;
-        margin-bottom: 30px;
-        font-size:.8em;
-      text-align: center;
-      }
-      h5 {
-        text-align: center;
-        width: 100%;
-        color: #b132b1;
-        text-transform: uppercase;
-        margin-bottom: 20px;
+    .icons {
+      img {
+        width: 90px;
       }
     }
   }
@@ -692,5 +625,3 @@ header {
 //make the page faster the video is making it slower
 //make the projects page more responsive
 //make about page nicer and responsive
-
-
