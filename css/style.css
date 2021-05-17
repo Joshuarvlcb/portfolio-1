@@ -153,7 +153,8 @@ header {
 }
 
 .about-page .con {
-  margin-top: 3vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
 
 .about-page .content-about p {
@@ -460,11 +461,6 @@ header {
     letter-spacing: 5px;
     color: #ffffff;
   }
-  .about-page {
-    width: 100vw;
-    min-height: 70vh;
-    background-color: #e7e7e7;
-  }
   .about-page .icons {
     width: 100%;
   }
@@ -550,9 +546,6 @@ header {
   .node {
     width: 50%;
   }
-  .about-page {
-    min-height: 90vh;
-  }
   .name {
     display: block;
     font-size: 40px;
@@ -602,12 +595,6 @@ header {
   .gradient {
     background-image: -webkit-gradient(linear, right bottom, left top, from(#8c1197), to(#cf631b));
     background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding-top: 500px;
-    height: 100%;
   }
   .name {
     display: block;
@@ -694,9 +681,6 @@ header {
 }
 
 @media only screen and (max-width: 360px) {
-  .about-page {
-    min-height: 110vh;
-  }
   .name {
     display: block;
     font-size: 35px;
