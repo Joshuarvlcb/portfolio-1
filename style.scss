@@ -119,8 +119,8 @@ header {
     }
   }
   .con {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
   }
   .content-about {
     p {
@@ -382,14 +382,7 @@ header {
       flex-direction: column;
       align-items: center;
     }
-    .colCon {
-      height: 50vh;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      flex-direction: column;
-    }
+   
     .content-about {
       display: flex;
       align-items: flex-start;
@@ -398,7 +391,7 @@ header {
       p {
         padding: 0 30px;
         margin-bottom: 30px;
-        font-size: 0.9em;
+        font-size: 1.1em;
         text-align: center;
       }
       h5 {
