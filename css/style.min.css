@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 body {
@@ -26,7 +27,7 @@ header {
   top: 0;
   width: 100vw;
   height: 100%;
-  background-image: linear-gradient(to top left, #8c1197a6 0%, #cf631b9d 100%);
+  background-image: linear-gradient(to top left, #9d29a8a4 0%, #751f6ebe 100%);
 }
 
 .vid {
