@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -27,6 +28,7 @@ header {
   top: 0;
   width: 100vw;
   height: 100%;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9d29a8a4), to(#751f6ebe));
   background-image: linear-gradient(to top left, #9d29a8a4 0%, #751f6ebe 100%);
 }
 
@@ -34,7 +36,8 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 100%;
   height: 100%;
   z-index: -3;
@@ -51,7 +54,9 @@ header {
 }
 
 .logo:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -60,7 +65,8 @@ header {
   top: 45%;
   left: 50%;
   text-transform: uppercase;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -93,20 +99,25 @@ header {
   padding: 1.3rem 2.6rem;
   display: inline-block;
   border-radius: 10rem;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   outline: none;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   color: black;
   outline: none;
 }
 
 .btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
   outline: none;
 }
 
@@ -120,25 +131,33 @@ header {
 
 .about-page {
   width: 100vw;
+  margin-top: -120px;
   background-color: #e7e7e7;
-  position: relative;
+  -webkit-clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .about-page .about-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-page .about-title h1 {
   color: #941478;
   font-size: 40px;
+  margin-top: 14vh;
 }
 
 .about-page .con {
-  padding-top: 6vh;
-  padding-bottom: 6vh;
+  padding-top: 4vh;
+  padding-bottom: 20vh;
 }
 
 .about-page .content-about p {
@@ -156,10 +175,23 @@ header {
 
 .skills-container {
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin-top: -150px;
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(20, 20, 20, 0.795)), to(rgba(34, 34, 34, 0.801))), url(https://images.pexels.com/photos/1089194/pexels-photo-1089194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-image: linear-gradient(to right, rgba(20, 20, 20, 0.795), rgba(34, 34, 34, 0.801)), url(https://images.pexels.com/photos/1089194/pexels-photo-1089194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;
   background-size: cover;
@@ -168,7 +200,7 @@ header {
 }
 
 .skills-container .skills-title {
-  margin-top: 10vh;
+  margin-top: 15vh;
   margin-bottom: 60px;
   color: white;
   font-size: 48px;
@@ -176,7 +208,7 @@ header {
 }
 
 .skills-container .skills-content {
-  margin-bottom: 10vh;
+  margin-bottom: 28vh;
 }
 
 .skills-container .section-title {
@@ -200,9 +232,13 @@ header {
   font-weight: 500;
   font-weight: 500;
   font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-right: 10px;
 }
 
@@ -217,6 +253,7 @@ header {
 
 .skills-container .progress-bar-wrap .progress-bar {
   height: 35px;
+  -webkit-transition: 0.9s;
   transition: 0.9s;
   background-color: #4ac74a;
 }
@@ -225,36 +262,60 @@ header {
   width: 100px;
   height: 35px;
   background-color: #2d0831;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .jquery-width {
   width: 100px;
   height: 35px;
   background-color: #092f46;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .html-width {
   width: 90px;
   height: 35px;
   background-color: #9e5a16;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .css-width {
   width: 90px;
   height: 35px;
   background-color: #214dac;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   margin: 0;
 }
@@ -263,33 +324,57 @@ header {
   width: 50px;
   height: 35px;
   background-color: #c4b215;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .sass-width {
   width: 80px;
   height: 35px;
   background-color: #b17b84;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .progress-bar .bootstrap-width {
   width: 120px;
   height: 35px;
   background-color: #5f0c5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap i {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-container .progress-bar-wrap .html {
@@ -384,24 +469,46 @@ header {
     width: 100px;
   }
   .about-page .about-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .about-page .about-title h1 {
     color: #941478;
     font-size: 40px;
   }
   .about-page .con {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .about-page .content-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .about-page .content-about p {
     padding: 0 30px;
@@ -452,6 +559,7 @@ header {
     padding: 1.1rem 2rem;
     display: inline-block;
     border-radius: 10rem;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -492,6 +600,7 @@ header {
     padding: 0.9rem 2rem;
     display: inline-block;
     border-radius: 10rem;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -535,6 +644,7 @@ header {
     padding: 0.9rem 2rem;
     display: inline-block;
     border-radius: 10rem;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
@@ -575,6 +685,7 @@ header {
     padding: 0.9rem 1.3rem;
     display: inline-block;
     border-radius: 10rem;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
     outline: none;
     font-size: 20px;
