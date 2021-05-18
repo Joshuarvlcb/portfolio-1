@@ -154,7 +154,6 @@ header {
 }
 
 .skills-container {
-  height: 145vh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -168,10 +167,15 @@ header {
 }
 
 .skills-container .skills-title {
+  margin-top: 10vh;
   margin-bottom: 60px;
   color: white;
   font-size: 48px;
   font-weight: 900;
+}
+
+.skills-container .skills-content {
+  margin-bottom: 10vh;
 }
 
 .skills-container .section-title {
@@ -331,9 +335,6 @@ header {
     letter-spacing: 18px;
     color: #ffffff;
   }
-  .skills-container {
-    height: 180vh;
-  }
 }
 
 @media only screen and (max-width: 780px) {
@@ -356,12 +357,6 @@ header {
     position: absolute;
     top: 40px;
     left: 30px;
-  }
-  .skills-title {
-    margin-top: 100px;
-    color: white;
-    font-size: 40px;
-    font-weight: 900;
   }
 }
 
@@ -593,9 +588,6 @@ header {
     position: absolute;
     top: 30px;
     left: 20px;
-  }
-  .skills-container {
-    height: 200vh;
   }
   .about-page .icons img {
     width: 90px;

@@ -139,7 +139,6 @@ header {
 }
 
 .skills-container {
-  height: 145vh;
   width: 100vw;
   display: flex;
   // margin-top: -268px;
@@ -159,12 +158,15 @@ header {
   // clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 
   .skills-title {
+    margin-top: 10vh;
     margin-bottom: 60px;
     color: rgb(255, 255, 255);
     font-size: 48px;
     font-weight: 900;
   }
-
+.skills-content{
+  margin-bottom: 10vh;
+}
   .section-title {
     color: peru;
     font-size: 36px;
@@ -309,9 +311,7 @@ header {
     letter-spacing: 18px;
     color: #ffffff;
   }
-  .skills-container {
-    height: 180vh;
-  }
+
 }
 
 @media only screen and (max-width: 780px) {
@@ -336,12 +336,7 @@ header {
     left: 30px;
   }
 
-  .skills-title {
-    margin-top: 100px;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    font-weight: 900;
-  }
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -580,9 +575,7 @@ header {
     top: 30px;
     left: 20px;
   }
-  .skills-container {
-    height: 200vh;
-  }
+
 
   .about-page {
     .icons {
