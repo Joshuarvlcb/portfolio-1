@@ -447,12 +447,7 @@ header {
   }
 }
 @media only screen and (max-width: 450px) {
-  .vid {
-    display: none;
-  }
-  .gradient {
-    background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
-  }
+ 
   .name {
     display: block;
     font-size: 40px;
