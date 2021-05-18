@@ -83,7 +83,7 @@
 }
 
 .card-header.mastermind {
-  background-image: url(mastermind-picture.png);
+  background-image: url(./mastermind.png);
 }
 
 .card-header.todo {
