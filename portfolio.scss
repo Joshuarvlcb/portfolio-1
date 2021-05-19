@@ -56,10 +56,10 @@
   color: rgb(145, 28, 110);
 }
 .card-header.mastermind {
-  background-image: url(./mastermind.png);
+  background-image: url(mastermind.png);
 }
 .card-header.todo {
-  background-image: url(todo-final.png);
+  background-image: url(todo.png);
   background-position: center;
   background-size: cover;
 }
@@ -67,7 +67,7 @@
   background-image: url(pokedex.png);
 }
 .card-header.calc {
-  background-image: url(calc-pic.png);
+  background-image: url(calc.png);
 }
 .tools-container.mastermind-color {
   background-color: rgb(19, 141, 182);
@@ -100,7 +100,11 @@
   background-position: center;
 }
 .card-header.quiz {
-  background-image: url(quiz-pic.png);
+  background-image: url(quiz.png);
+}
+.card-header.tic {
+  background-size: cover;
+  background-image: url(tic-tac-toe.png);
 }
 .heading-text h3 {
   margin-top: 90px;
