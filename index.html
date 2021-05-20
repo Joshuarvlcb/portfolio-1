@@ -36,14 +36,13 @@
       <!-- background video -->
       <div class="gradient">
         <div class="vid-container">
-          
+
  <video autoplay muted loop class="vid">
             <source
               src="./mylivewallpapers.com-Retro-Skyscrapers.mp4"
               type="video/mp4"
             />
-          </video>
-
+  </video>
         </div>
       </div>
 
@@ -196,9 +195,16 @@
     </div>
 
     <div class="portfolio">
-      <div class="projects-title">
+      <div class="projects-title d-flex justify-content-evenly align-items-center flex-lg-row flex-sm-column">
         <h1 id="skills">Projects</h1>
+
+      <select style="width: 200px;" id='select' onchange = "myFunction()" >
+          <option  value="1">js/react</option>
+          <option  value="2">css</option>
+       </select>
       </div>
+     
+        
       <div class="row">
         <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
         <div class="card ">
@@ -795,5 +801,7 @@
     ></script>
 
 <!-- ddfd -->
+ 
+<script src="./projects.js"></script>
   </body>
 </html>
