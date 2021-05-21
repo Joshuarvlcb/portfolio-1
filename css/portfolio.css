@@ -325,9 +325,6 @@
 footer .footer {
   height: 130px;
   width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
   background: -webkit-gradient(linear, left top, right top, from(#882aad), to(#9c11a8));
   background: linear-gradient(to right, #882aad, #9c11a8);
 }
