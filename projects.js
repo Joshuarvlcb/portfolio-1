@@ -12,11 +12,16 @@ const card = Array.from(cards).map((card) => {
 const removeCards = (remove) => {
   const remover = card.filter((curr) => {
     let id;
+    
     curr.classList.forEach((currClassList) => {
       currClassList == remove ? (id = curr) : (id = null);
     });
     if (id != null) return id;
   });
+
+  remover.forEach(curr => {
+     $(curr).hide(100)
+  })
 
 };
 const addCards = (addCards) => {
@@ -34,15 +39,32 @@ const addCards = (addCards) => {
 
 $('#select').change(function(){
    let value = document.querySelector("#select").value;
-   if (value == "css") {
+   if (value == "react") {
+
       card.forEach((curr) => {
          $(curr).slideDown(1000)
-       });     addCards("css");
-   } else if (value == "js") {
+       });    
+       
+       addCards("react");
+
+   } else if (value == "game") {
+
       card.forEach((curr) => {
          $(curr).slideDown(1000)
-       });     addCards("js");
+       });     
+       
+       addCards("games");
+
+   }else if(value == 'all'){
+
+      card.forEach((curr) => {
+         $(curr).slideDown(1000)
+       });
+
    }
  })
+
+ removeCards('games')
+ 
 })
 
