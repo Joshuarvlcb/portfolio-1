@@ -84,6 +84,26 @@ header {
   width: 1000px;
 }
 
+.block {
+  display: block;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.none {
+  display: none;
+}
+
 .title {
   display: block;
   font-size: 30px;
@@ -124,7 +144,7 @@ header {
 .project-btn {
   background-color: white;
   font-weight: 700;
-  color: #fa0a0a;
+  color: #0066ff;
   font-size: 1.3rem;
   letter-spacing: 1.5px;
 }
@@ -205,10 +225,6 @@ header {
   color: white;
   font-size: 48px;
   font-weight: 900;
-}
-
-.skills-container .skills-content {
-  margin-bottom: 28vh;
 }
 
 .skills-container .section-title {

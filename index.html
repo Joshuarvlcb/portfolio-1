@@ -40,7 +40,13 @@
       <!-- background video -->
       <div class="gradient">
         <div class="vid-container">
-          <img class="vid" src="citys.gif" alt="">
+
+ <video autoplay muted loop class="vid">
+            <source
+              src="./mylivewallpapers.com-Retro-Skyscrapers.mp4"
+              type="video/mp4"
+            />
+  </video>
         </div>
       </div>
 
@@ -193,12 +199,19 @@
     </div>
 
     <div class="portfolio">
-      <div class="projects-title">
+      <div class="projects-title d-flex justify-content-evenly align-items-center flex-lg-row flex-sm-column">
         <h1 id="skills">Projects</h1>
+
+      <select style="width: 200px;" id='select' onchange = "myFunction()" >
+          <option  value="js">js/react</option>
+          <option  value="css">css</option>
+       </select>
       </div>
+     
+        
       <div class="row">
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-        <div class="card ">
+        <div class="  col col-lg-4 flex js" style="height: 500px;">
+        <div class="card">
           <div class="front-card card_side">
             <div class="card-header quiz"></div>
             <div class="heading-text">
@@ -234,7 +247,7 @@
         </div>
         </div>
 
-        <div class=" col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+        <div class=" col col-lg-4 flex js"style="height: 500px;">
           <div class="card">
           <div class="front-card card_side">
             <div class="card-header mastermind"></div>
@@ -271,7 +284,7 @@
           </div>
         </div>
         </div>
-                <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+                <div class="col col-lg-4 flex js" style="height: 500px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -308,7 +321,7 @@
           </div>
         </div>
                 </div>
-                <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+                <div class="col col-lg-4 flex css" style="height: 500px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -346,7 +359,7 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+        <div class="col col-lg-4 flex js" style="height: 500px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -382,7 +395,7 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+        <div class="col col-lg-4 flex css" style="height: 500px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -418,223 +431,8 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header tic"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Tic-Tac-Toe</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href="https://joshuarvlcb.github.io/new-tictactoe/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/new-tictactoe"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">React-Todo-List</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Bootstrap</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Atlas</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Calculator</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Calculator</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+    
+        <div class="col col-lg-4 flex css" style="height: 500px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -671,7 +469,7 @@
         </div>
         </div>
 
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+        <div class="col col-lg-4 flex css" style="height: 500px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -707,7 +505,7 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="margin-bottom: 250px;">
+        <div class="col col-lg-4 flex js" style="margin-bottom: 250px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -792,5 +590,7 @@
     ></script>
 
 <!-- ddfd -->
+ 
+<script src="./projects.js"></script>
   </body>
 </html>
