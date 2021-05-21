@@ -106,22 +106,24 @@ header {
 
 .about-page {
   width: 100vw;
+  margin-top: -120px;
   background-color: #e7e7e7;
-  position: relative;
+  clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+
 
   .about-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
     h1 {
       color: rgb(148, 20, 120);
       font-size: 40px;
+      margin-top: 14vh;
     }
   }
   .con {
-    padding-top: 6vh;
-    padding-bottom: 6vh;
+    padding-top: 4vh;
+    padding-bottom: 20vh;
   }
   .content-about {
     p {
@@ -142,7 +144,9 @@ header {
 .skills-container {
   width: 100vw;
   display: flex;
-  // margin-top: -268px;
+  margin-top: -150px;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -159,14 +163,14 @@ header {
   // clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 
   .skills-title {
-    margin-top: 10vh;
+    margin-top: 15vh;
     margin-bottom: 60px;
     color: rgb(255, 255, 255);
     font-size: 48px;
     font-weight: 900;
   }
 .skills-content{
-  margin-bottom: 10vh;
+  margin-bottom: 28vh;
 }
   .section-title {
     color: peru;
@@ -447,12 +451,7 @@ header {
   }
 }
 @media only screen and (max-width: 450px) {
-  .vid {
-    display: none;
-  }
-  .gradient {
-    background-image: linear-gradient(to top left, #8c1197 0%, #cf631b 100%);
-  }
+ 
   .name {
     display: block;
     font-size: 40px;
