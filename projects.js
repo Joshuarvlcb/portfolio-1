@@ -44,7 +44,6 @@ const addCards = (addCards) => {
     curr.style.display = "flex";
   });
 };
-
 function myFunction() {
   let value = document.querySelector("#select").value;
   if (value == "css") {
