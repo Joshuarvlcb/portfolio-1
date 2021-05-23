@@ -1,56 +1,77 @@
 "use strict";
 
-// const options = document.getElementsByClassName('select')
+$(function () {
+  const cards = document.getElementsByClassName("flex");
 
-//     Array.from(options).forEach(option => {
-//         option.addEventListener('onChange',(e) => {
-//             console.log('hu')
-//         })
-//         console.log(option)
-//     })
+  const card = Array.from(cards).map((card) => {
+    return card;
+  });
 
-document.querySelector("#select").addEventListener("onchange", myFunction);
+  const removeCards = (remove) => {
+    const remover = card.filter((curr) => {
+      let id;
 
-console.log(document.querySelector("#select"));
+      curr.classList.forEach((currClassList) => {
+        currClassList == remove ? (id = curr) : (id = null);
+      });
+      if (id != null) return id;
+    });
 
-const cards = document.getElementsByClassName("flex");
+    remover.forEach((curr) => {
+      $(curr).hide(100);
+    });
+  };
+  const addCards = (addCards) => {
+    const add = card.filter((curr) => {
+      let id;
+      curr.classList.forEach((currClassList) => {
+        currClassList == addCards ? (id = curr) : (id = null);
+      });
+      if (id != null) return id;
+    });
+    add.forEach((curr) => {
+      if (window.innerWidth <= 900) {
+        curr.style.display = "flex";
+      } else {
+        $(curr).slideUp(700);
+      }
+    });
+  };
 
-const card = Array.from(cards).map((card) => {
-  return card;
+  $("#select").change(function () {
+    let value = document.querySelector("#select").value;
+    if (value == "react") {
+      if (window.innerWidth <= 900) {
+        card.forEach((curr) => {
+          curr.style.display = "none";
+        });
+      } else {
+        $(curr).slideUp(700);
+      }
+
+      addCards("games");
+    } else if (value == "game") {
+      if (window.innerWidth <= 900) {
+        card.forEach((curr) => {
+          curr.style.display = "none";
+        });
+      } else {
+        $(curr).slideUp(700);
+      }
+
+      addCards("react");
+    } else if (value == "all") {
+      if (window.innerWidth <= 900) {
+        card.forEach((curr) => {
+          curr.style.display = "flex";
+        });
+      } else {
+        card.forEach((curr) => {
+          $(curr).slideUp(700);
+        });
+      }
+    }
+  });
+
+  removeCards("games");
 });
-
-const removeCards = (remove) => {
-  const remover = card.filter((curr) => {
-    let id;
-    curr.classList.forEach((currClassList) => {
-      currClassList == remove ? (id = curr) : (id = null);
-    });
-    if (id != null) return id;
-  });
-
-  remover.forEach((curr) => {
-    curr.style.display = "none";
-  });
-};
-const addCards = (addCards) => {
-  const add = card.filter((curr) => {
-    let id;
-    curr.classList.forEach((currClassList) => {
-      currClassList == addCards ? (id = curr) : (id = null);
-    });
-    if (id != null) return id;
-  });
-  add.forEach((curr) => {
-    curr.style.display = "flex";
-  });
-};
-function myFunction() {
-  let value = document.querySelector("#select").value;
-  if (value == "css") {
-    removeCards("js");
-    addCards("css");
-  } else if (value == "js") {
-    removeCards("css");
-    addCards("js");
-  }
-}
