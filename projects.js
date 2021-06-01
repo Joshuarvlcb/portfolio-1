@@ -41,25 +41,32 @@ $(function () {
   $("#select").change(function () {
     let value = document.querySelector("#select").value;
     if (value == "react") {
+    
       if (window.innerWidth <= 900) {
         card.forEach((curr) => {
           curr.style.display = "none";
         });
       } else {
-        $(curr).slideUp(700);
+        card.forEach((curr) => {
+          $(curr).slideDown(700);
+        })
+        addCards("games")
       }
 
-      addCards("games");
     } else if (value == "game") {
+console.log('click')
       if (window.innerWidth <= 900) {
         card.forEach((curr) => {
           curr.style.display = "none";
         });
       } else {
-        $(curr).slideUp(700);
+        card.forEach((curr) => {
+          $(curr).slideDown(700);
+        });
+        addCards("react");
+
       }
 
-      addCards("react");
     } else if (value == "all") {
       if (window.innerWidth <= 900) {
         card.forEach((curr) => {
@@ -67,7 +74,7 @@ $(function () {
         });
       } else {
         card.forEach((curr) => {
-          $(curr).slideUp(700);
+          $(curr).slideDown(700);
         });
       }
     }
@@ -75,3 +82,4 @@ $(function () {
 
   removeCards("games");
 });
+
