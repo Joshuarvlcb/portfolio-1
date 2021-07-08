@@ -1,5 +1,8 @@
 .testimonial {
   height: 100vh;
   width: 100vw;
+  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.795), rgba(34, 34, 34, 0.801)), url(https://images.pexels.com/photos/5997286/pexels-photo-5997286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  color: white;
 }
 /*# sourceMappingURL=testimonial.css.map */

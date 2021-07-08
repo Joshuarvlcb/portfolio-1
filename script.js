@@ -326,11 +326,13 @@ document.querySelector(".ham").addEventListener("click", function (e) {
     navbar.classList.remove("none");
     gradient.classList.add("none");
     hamone.classList.add("open");
+    navbar.style.left = "0%";
   } else {
     navbarToggle = true;
     navbar.classList.add("none");
     gradient.classList.remove("none");
     hamone.classList.remove("open");
+    navbar.style.left = "-100%";
   }
   console.log(navbarToggle);
 });

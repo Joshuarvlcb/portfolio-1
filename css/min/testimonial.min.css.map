@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CACb",
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,2EAIf,EACD,oHAAoH;EACtH,mBAAmB,EAAE,MAAM;EAC3B,KAAK,EAAE,KAAK;CACb",
     "sources": [
         "../../testimonial.scss"
     ],
