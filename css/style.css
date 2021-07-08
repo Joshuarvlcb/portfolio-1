@@ -1,10 +1,9 @@
 .contact {
   height: 100vh;
   width: 100vw;
-  background-color: yellowgreen;
   position: relative;
-  background-color: #38acff;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%236c7fcc' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%232d3baa' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%236276c5' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%232938a3' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23586dbe' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2325359c' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%234f65b8' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23223296' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23455cb1' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%231e2f8f' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%233b53aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%231a2c88' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.795), rgba(34, 34, 34, 0.801)), url(https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
   background-size: cover;
 }
 
@@ -79,6 +78,101 @@ footer .email {
   background-image: linear-gradient(to right, rgba(20, 20, 20, 0.795), rgba(34, 34, 34, 0.801)), url(https://images.pexels.com/photos/5997286/pexels-photo-5997286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;
   color: white;
+  position: relative;
+}
+
+.testimonial h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.testi-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.testi-con__actual {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  background-color: #e7e7e7;
+}
+
+.testi-con__pic {
+  flex: 0 0 40%;
+  height: 100%;
+  padding: 35px;
+}
+
+.testi-con__pic__image {
+  background-image: linear-gradient(to right, rgba(177, 61, 177, 0.596), rgba(141, 82, 153, 0.562)), url(https://images.pexels.com/photos/4114735/pexels-photo-4114735.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  height: inherit;
+  background-position: center;
+}
+
+.testi-con__content {
+  flex: 0 0 6;
+  padding: 15px;
+  padding-right: 50px;
+  height: 90%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testi-con__content__para {
+  line-height: 2;
+}
+
+.testi-con__content__name {
+  padding-top: 25px;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+  font-size: 25px;
+  color: purple;
+  letter-spacing: 1px;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+}
+
+.back {
+  cursor: pointer;
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
 }
 
 *,

@@ -336,3 +336,110 @@ document.querySelector(".ham").addEventListener("click", function (e) {
   }
   console.log(navbarToggle);
 });
+
+class Testimonial {
+  constructor(img, quote, name) {
+    (this.img = img), (this.quote = quote), (this.name = name);
+  }
+}
+let back = document.querySelector(".back");
+let next = document.querySelector(".next");
+let page = 0;
+
+const perla = new Testimonial(
+  "perl.img",
+  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa cumque sequi eligendi labore dolorum facere rem enim minus eaque, optio adipisci. Repellat consequuntur unde sequi tenetur facere voluptates quae eaque veniam repellendus odio vitae excepturi maxime praesentium tempora quidem porro incidunt vero quod molestias ut, nobis atque fugit laboriosam recusandae.",
+  "Cristian Perla"
+);
+console.log(perla);
+const saul = new Testimonial(
+  "perl.img",
+  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa cumque sequi eligendi labore dolorum facere rem enim minus eaque, optio adipisci. Repellat consequuntur unde sequi tenetur facere voluptates quae eaque veniam repellendus odio vitae excepturi maxime praesentium tempora quidem porro incidunt vero quod molestias ut, nobis atque fugit laboriosam recusandae.",
+  "Saul Ruvalcaba"
+);
+const lalo = new Testimonial(
+  "lalo.img",
+  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa cumque sequi eligendi labore dolorum facere rem enim minus eaque, optio adipisci. Repellat consequuntur unde sequi tenetur facere voluptates quae eaque veniam repellendus odio vitae excepturi maxime praesentium tempora quidem porro incidunt vero quod molestias ut, nobis atque fugit laboriosam recusandae.",
+  "Eduardo Castro"
+);
+let testismonials = [perla, saul, lalo];
+const contentParent = document.querySelector(".testi-con__content");
+const clearstate = () => {
+  while (contentParent.firstChild) {
+    contentParent.removeChild(contentParent.firstChild);
+  }
+};
+let nextSwicth = false;
+next.addEventListener("click", (e) => {
+  page++;
+
+  if (page == testismonials.length - 1) {
+    next.style.display = "none";
+    nextSwicth = true;
+  }
+  if (page !== 0) {
+    back.style.display = "flex";
+  }
+  if (page == testismonials.length) return;
+  console.log(page);
+
+  clearstate();
+  let name = document.createElement("div");
+  let para = document.createElement("div");
+  para.className = "testi-con__content__para";
+  name.className = "testi-con__content__name";
+  name.textContent = testismonials[page].name;
+  para.textContent = testismonials[page].quote;
+  console.log("hi");
+  contentParent.appendChild(para);
+  contentParent.appendChild(name);
+});
+back.addEventListener("click", (e) => {
+  page--;
+  console.log(page);
+
+  if (nextSwicth) {
+    next.style.display = "flex";
+  }
+  if (page == 0) {
+    clearstate();
+
+    back.style.display = "none";
+
+    let name = document.createElement("div");
+    let para = document.createElement("div");
+    para.className = "testi-con__content__para";
+    name.className = "testi-con__content__name";
+    name.textContent = testismonials[page].name;
+    para.textContent = testismonials[page].quote;
+    console.log("hi");
+    contentParent.appendChild(para);
+    contentParent.appendChild(name);
+  }
+  if (page == 0) return;
+
+  clearstate();
+
+  let name = document.createElement("div");
+  let para = document.createElement("div");
+  para.className = "testi-con__content__para";
+  name.className = "testi-con__content__name";
+  name.textContent = testismonials[page].name;
+  para.textContent = testismonials[page].quote;
+  console.log("hi");
+  contentParent.appendChild(para);
+  contentParent.appendChild(name);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  let name = document.createElement("div");
+  let para = document.createElement("div");
+  para.className = "testi-con__content__para";
+  name.className = "testi-con__content__name";
+  name.textContent = testismonials[page].name;
+  para.textContent = testismonials[page].quote;
+  console.log("hi");
+  contentParent.appendChild(para);
+  contentParent.appendChild(name);
+  back.style.display = "none";
+});
