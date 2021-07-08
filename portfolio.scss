@@ -21,19 +21,27 @@
 .card:hover .back-card {
   transform: rotateY(0);
 }
-
+.form-select {
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 3px rgb(148, 20, 120) solid;
+  color: #882aad;
+}
+.form-select:focus {
+  border: 3px rgb(148, 20, 120) solid;
+}
 .portfolio {
   width: 100vw;
   position: relative;
   background-color: rgb(231, 231, 231);
 }
-
 .portfolio h1 {
   font-size: 43px;
   color: rgb(148, 20, 120);
   font-weight: 800;
   display: inline;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .projects-title {
   padding: 80px 0px;
@@ -90,6 +98,7 @@
   background-color: rgb(231, 231, 231);
   border-radius: 5px;
   border: none;
+  margin: 25px !important;
 }
 .card-header {
   position: absolute;
@@ -234,63 +243,6 @@
     text-decoration: none;
     color: rgb(255, 118, 141);
   }
-}
-footer {
-  .footer {
-    height: 130px;
-    width: 100%;
-    background: linear-gradient(to right, #882aad, #9c11a8);
-  }
-
-  .links-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    height: 130px;
-    align-items: center;
-  }
-  ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0px;
-    margin-bottom: 0px;
-
-    li {
-      list-style: none;
-      cursor: pointer;
-      font-size: 20px;
-      text-transform: capitalize;
-      color: white;
-    }
-    .resume {
-      padding-top: 18px;
-      button {
-        background-color: rgb(255, 255, 255);
-        color: #ffffff;
-        outline: none;
-        padding: 6px 10px;
-        border: none;
-        border-radius: 3px;
-        text-transform: capitalize;
-      }
-    }
-  }
-  .email {
-    border-top: 2px solid white;
-    color: white;
-    padding-top: 40px;
-    font-size: 20px;
-  }
-}
-.resume-btn {
-  color: rgb(0, 102, 255);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 19px;
-}
-.resume-btn:hover {
-  color: rgb(0, 102, 255);
 }
 
 // @media only screen and (max-height: 700px) {

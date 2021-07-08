@@ -1,0 +1,72 @@
+.contact {
+  height: 100vh;
+  width: 100vw;
+  background-color: yellowgreen;
+  position: relative;
+}
+
+footer .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 130px;
+  width: 100%;
+  background: linear-gradient(to right, #882aad, #9c11a8);
+}
+
+footer .links-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 130px;
+  align-items: center;
+}
+
+footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+footer ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+}
+
+footer ul .resume {
+  padding-top: 18px;
+}
+
+footer ul .resume button {
+  background-color: white;
+  color: #ffffff;
+  outline: none;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
+footer .email {
+  border-top: 2px solid white;
+  color: white;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.resume-btn {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.resume-btn:hover {
+  color: #0066ff;
+}
+/*# sourceMappingURL=contact.css.map */

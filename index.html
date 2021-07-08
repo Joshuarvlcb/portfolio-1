@@ -13,10 +13,11 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    
   </head>
   <body>
     <!-- Landing -->
@@ -39,8 +40,37 @@
        -->
       <!-- background video -->
       <div class="gradient">
+        <div class="navbar">
+          <ul class="links">
+            <li class="link">porfolio</li>
+            <li class="link">skills</li>
+            <li class="link">about page</li>
+            <li class="link">testimonials</li>
+          </ul>
+        </div>
+        <ul class = 'nav-active none'>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Residential
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Porfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Contact
+              </a>
+            </li>
+          </ul>
         <div class="vid-container">
-
  <video autoplay muted loop class="vid">
             <source
               src="./mylivewallpapers.com-Retro-Skyscrapers.mp4"
@@ -50,149 +80,23 @@
         </div>
       </div>
 
-      <div class="logo-container">
-        <img src="./JR-logo.png" alt="LOGO" class="logo" />
+      <div class="ham">
+        <div class="ham-1">
+        </div>
       </div>
       <div class="content-box">
         <h1 class="heading-text">
           <span class="name">Joshua Ruvalcaba</span>
-          <span class="title">Front end developer</span>
+          <span class="title">Full Stack Engineer</span>
         </h1>
         <a href="#skills" class="btn project-btn">See Projects</a>
       </div>
     </header>
 
-<div class="about-page">
-  <div class="about-title">
-    <h1>About Me</h1>
-  </div>
-<div class="row d-flex justify-content con">
-  
-<div class=" col col-lg-8 col-sm-12 d-flex justify-content-center align-items-center flex-column" style="padding-left:5vw;">
-  <div class="content-about">
-    <h5>Motivated to produce results</h4>
-   
-    <p>      
-      As a coding student in West-Mec I challenge myself everyday to improve my skills and learn new technologies in my free time
-    </p>
-</div>
-<div class="content-about">
-    <h5>Agile Software Development</h4>
-   <p>I have contributed in a project with a team following the Agile methodology principles to write efficient code and effective communication with team members to create the best code possible.</p>
-</div>
-</div>
-<div class="col col-lg-4 icons d-flex align-items-center justify-content-evenly " style="padding-right:6vw;" >
-  <div class="d-flex justify-content-center"><img width="170px" src="./jsIcon.png" alt="JavaScript icon"></div>
-  <div class="d-flex justify-content-center" ><img width="170px" src="./reactIcon.png" alt="React js icon" ></div>
-</div>
 
 </div>
 
-</div>
-</div>
-
-
-    <!-- skills -->
-    <div class="skills-container">
-      <div class="skills-title">My Skills</div>
-      <div class="background"></div>
-      <div class="skills container" id="skiils">
-        <div class="row skills-content">
-          <div class="col-lg-6">
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar html" style="width: 100%">
-                  <span class="skill"
-                    ><div class="html-width">html</div>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar css" style="width: 100%">
-                  <span class="skill"
-                    ><div class="css-width">css</div>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar js" style="width: 100%">
-                  <span class="skill"
-                    ><div class="js-width">js</div>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap" >
-                <div class="progress-bar " style="width: 100%;background-color: rgb(49, 209, 102);">
-                  <span class="skill"
-                    ><div class="bootstrap-width" style="background-color:rgb(20, 148, 52)">Node</div>
-                   
-                  
-                </div>
-              </div>
-            </div>
-
-            
-          </div>
-          <div class="col-lg-6">
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar sass" style="width: 100%">
-                  <span class="skill"
-                    ><div class="sass-width">sass</div>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar jquery" style="width: 100%">
-                  <span class="skill">
-                    <div class="jquery-width">jQuery</div>
-                  
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar bootstrap" style="width: 100%">
-                  <span class="skill"
-                    ><div class="bootstrap-width">bootstrap</div>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-              <div class="progress">
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar bootstrap" style="width: 100%; background-color: lightblue ">
-                    <span class="skill"
-                      ><div class="bootstrap-width" style = "background-color:rgb(106, 182, 207)">react</div>
-                     </span
-                    >
-                  </div>
-                </div>
-              </div>
-
-           
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio">
+<div class="portfolio">
       <div class="projects-title d-flex justify-content-evenly align-items-center flex-lg-row flex-column">
         <h1 id="skills">Projects</h1>
 
@@ -207,7 +111,7 @@
      
         
       <div class="row"  >
-        <div class="  col col-lg-4 flex games" style="height: 440px;margin-bottom: 60px;">
+        <div class="  col col-lg-4 flex games" style="height: 440px;margin-bottom: 80px;">
         <div class="card">
           <div class="front-card card_side">
             <div class="card-header quiz"></div>
@@ -244,7 +148,7 @@
         </div>
         </div>
 
-        <div class=" col col-lg-4 flex games" style="height: 440px;margin-bottom: 60px;">
+        <div class=" col col-lg-4 flex games" style="height: 440px;margin-bottom: 80px;">
           <div class="card">
           <div class="front-card card_side">
             <div class="card-header mastermind"></div>
@@ -281,7 +185,7 @@
           </div>
         </div>
         </div>
-        <div class=" col col-lg-4 flex games" style="height: 440px;margin-bottom: 60px;">
+        <div class=" col col-lg-4 flex games" style="height: 440px;margin-bottom: 80px;">
           <div class="card">
           <div class="front-card card_side">
             <div class="card-header mastermind"></div>
@@ -318,7 +222,7 @@
           </div>
         </div>
         </div>
-                <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 60px;">
+                <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 80px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -393,7 +297,7 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 60px;">
+        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 80px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -429,7 +333,7 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 60px;">
+        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 80px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -466,7 +370,7 @@
         </div>
         </div>
     
-        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 60px;">
+        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 80px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -503,7 +407,7 @@
         </div>
         </div>
 
-        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 60px;">
+        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 150px;">
 
         <div class="card">
           <div class="front-card card_side">
@@ -542,7 +446,241 @@
       
        
       </div>
-      <footer>
+    </div>
+  
+    <!-- skills -->
+    <div class="skills-container">
+      <div class="skills-title">My Skills</div>
+      <div class="background"></div>
+      <div class="skills container" id="skiils">
+        <div class="row skills-content">
+          <div class="col-lg-6">
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar html" style="width: 100%">
+                  <span class="skill"
+                    ><div class="html-width">html</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar css" style="width: 100%">
+                  <span class="skill"
+                    ><div class="css-width">css</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar js" style="width: 100%">
+                  <span class="skill"
+                    ><div class="js-width">js</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap" >
+                <div class="progress-bar " style="width: 100%;background-color: rgb(49, 209, 102);">
+                  <span class="skill"
+                    ><div class="bootstrap-width" style="background-color:rgb(20, 148, 52)">Node</div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(136, 210, 235) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(90, 184, 216)">react</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(92, 175, 202) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(44, 116, 158)">typescript</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+                 <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(236, 125, 125) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(161, 66, 66)">mongoose</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+
+                 <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: #FFE873 ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:#dfb92f">python</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar sass" style="width: 100%">
+                  <span class="skill"
+                    ><div class="sass-width">sass</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar jquery" style="width: 100%">
+                  <span class="skill">
+                    <div class="jquery-width">jQuery</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar bootstrap" style="width: 100%">
+                  <span class="skill"
+                    ><div class="bootstrap-width">bootstrap</div>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+                  <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(89, 156, 75) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(56, 105, 65)">mongodb</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+   <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" style="width: 100%; background-color: rgb(187, 121, 231) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(138, 55, 194)">redux</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: #FFA611 ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:#F5820D">firebase</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(196, 196, 196) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(110, 112, 112)">express</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+          
+           
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: #cf9a68 ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:#c58133">SQL</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+           
+
+           
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ <div class="about-page">
+  <div class="about-title">
+    <h1>About Me</h1>
+  </div>
+<div class="row d-flex justify-content con">
+  
+<div class=" col col-lg-8 col-sm-12 d-flex justify-content-center align-items-center flex-column" style="padding:0 6vw;">
+  <div class="content-about">
+    <h5>Motivated to produce results</h4>
+   
+    <p>      
+     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laborum tempora commodi assumenda pariatur inventore dolores dolorem necessitatibus numquam architecto consequuntur vero, repellat maxime saepe illum iste. Sequi, suscipit. Ad laudantium tenetur natus reprehenderit deleniti nostrum. Ut rerum atque quas!
+    </p>
+</div>
+<div class="content-about">
+    <h5>Agile Software Development</h4>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda modi voluptates harum eum impedit ipsa explicabo adipisci nesciunt accusantium eligendi deleniti consequatur rerum tempora quis culpa praesentium iure quod inventore aut, nostrum reprehenderit quasi? Perspiciatis, ad vel. Ipsam, est nihil!</p>
+</div>
+</div>
+<div class="col col-lg-4 icons d-flex align-items-center justify-content-evenly "  >
+  <!-- <div class="d-flex justify-content-center"><img width="170px" src="./jsIcon.png" alt="JavaScript icon"></div>
+  <div class="d-flex justify-content-center" ><img width="170px" src="./reactIcon.png" alt="React js icon" ></div> -->
+  <div class="cube-con">
+     <div class="cube">
+    <div class="cube__faces">
+      <div class="cubeface cubefront">
+        <img src="./jsIcon.png" alt="">
+      </div>
+      <div class="cubeface cubeback">
+        <img src="./pngfind.com-js-logo-png-6833893.png" alt="">
+      </div>
+      <div class="cubeface cubeleft">
+        <img src="./reactIcon.png" alt="">
+      </div>
+      <div class="cubeface cuberight">
+                <img src="./pngaaa.com-5006425.png" alt="">
+
+      </div>
+      <div class="cubeface cubetop"></div>
+      <div class="cubeface cubebottom"></div>
+    </div>
+  </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<div class="testimonial"></div>
+<div class="contact">
+  <footer>
         <div class="footer" style="margin-top: 5vh;" >
           <div class="container">
             <!-- <div class="logo-mini"><img src="./favicon.png" alt="" /></div>
@@ -586,9 +724,12 @@
             
             </ul>
           </div>
+  </div>
+
         </div>
       </footer>
-    </div>
+
+   
     <script src="./script.js"></script>
 
     <!-- JavaScript Bundle with Popper -->

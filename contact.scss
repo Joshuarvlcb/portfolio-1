@@ -1,0 +1,66 @@
+.contact {
+  height: 100vh;
+  width: 100vw;
+  background-color: yellowgreen;
+  position: relative;
+}
+footer {
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 130px;
+    width: 100%;
+    background: linear-gradient(to right, #882aad, #9c11a8);
+  }
+
+  .links-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 130px;
+    align-items: center;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+    margin-bottom: 0px;
+
+    li {
+      list-style: none;
+      cursor: pointer;
+      font-size: 20px;
+      text-transform: capitalize;
+      color: white;
+    }
+    .resume {
+      padding-top: 18px;
+      button {
+        background-color: rgb(255, 255, 255);
+        color: #ffffff;
+        outline: none;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 3px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .email {
+    border-top: 2px solid white;
+    color: white;
+    padding-top: 40px;
+    font-size: 20px;
+  }
+}
+.resume-btn {
+  color: rgb(0, 102, 255);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 19px;
+}
+.resume-btn:hover {
+  color: rgb(0, 102, 255);
+}
