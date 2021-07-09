@@ -1,19 +1,107 @@
 .contact {
-  height: 100vh;
-  width: 100vw;
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.795), rgba(34, 34, 34, 0.801)), url(https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-position: center;
-  background-size: cover;
+}
+
+.contact h1 {
+  font-weight: bold;
+}
+
+.contact-con {
+  width: 60vw;
+  height: 600px;
+  display: flex;
+}
+
+.contact-con__info {
+  display: flex;
+  flex: 0 0 40%;
+  height: 100%;
+  background-color: #5b1b80;
+  flex-direction: column;
+}
+
+.contact-con__info__title {
+  letter-spacing: 1px;
+  font-size: 29px;
+  padding-left: 15px;
+  margin-top: 20px;
+  padding-bottom: 1px;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-con__info__para {
+  text-align: left;
+  width: 100%;
+  padding-left: 15px;
+  color: rgba(255, 255, 255, 0.644);
+  margin-bottom: 60px;
+}
+
+.contact-con__info__info__list {
+  margin-bottom: 33px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-con__info__info__list li {
+  list-style: none;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.contact-con__form {
+  padding: 50px;
+  flex-direction: column;
+  display: flex;
+  flex: 0 0 60%;
+  align-items: center;
+  height: 100%;
+  background-color: #e7e7e7;
+}
+
+.contact-con__form__actual {
+  margin-top: 90px;
+}
+
+.contact-con__form__input {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 5px;
+  width: 240px;
+}
+
+.contact-con__form__button {
+  align-self: flex-end;
+}
+
+.message {
+  width: 100%;
+}
+
+.last {
+  margin-bottom: 10px;
+}
+
+.phone,
+.email,
+.location {
+  font-size: 34px;
+  margin-right: 20px;
 }
 
 footer .footer {
   position: absolute;
-  bottom: -120px;
+  bottom: -100px;
   left: 0;
   height: 130px;
   width: 100%;
-  background: linear-gradient(to right, #581d5e, #6d28c7);
+  background: linear-gradient(to right, #44175e, #8e32cc);
 }
 
 footer .links-container {
@@ -69,12 +157,14 @@ footer .email {
 }
 
 .resume-btn:hover {
-  color: #0066ff;
+  color: red;
 }
 
 .testimonial {
-  height: 100vh;
+  height: 200vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(to right, rgba(20, 20, 20, 0.795), rgba(34, 34, 34, 0.801)), url(https://images.pexels.com/photos/5997286/pexels-photo-5997286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;
   color: white;
@@ -88,9 +178,11 @@ footer .email {
   top: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .testi-con {
+  flex: 0 0 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,8 +191,8 @@ footer .email {
 
 .testi-con__actual {
   position: relative;
-  width: 800px;
-  height: 500px;
+  width: 60vw;
+  height: 600px;
   display: flex;
   flex-direction: row;
   background-color: #e7e7e7;
@@ -109,7 +201,7 @@ footer .email {
 .testi-con__pic {
   flex: 0 0 40%;
   height: 100%;
-  padding: 35px;
+  padding: 50px;
 }
 
 .testi-con__pic__image {
@@ -119,9 +211,29 @@ footer .email {
   background-position: center;
 }
 
+.testi-con__content::before {
+  content: "\201C";
+  font-size: 10rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #610c4fa4;
+}
+
+.testi-con__content::after {
+  content: "\201C";
+  font-size: 10rem;
+  position: absolute;
+  bottom: -1rem;
+  right: 4rem;
+  color: #400d7aa2;
+  transform: rotateY(180deg);
+}
+
 .testi-con__content {
+  position: relative;
   flex: 0 0 6;
-  padding: 15px;
+  padding: 50px;
   padding-right: 50px;
   height: 90%;
   color: black;
@@ -148,31 +260,35 @@ footer .email {
 .next {
   cursor: pointer;
   position: absolute;
-  right: -25px;
+  right: -35px;
   top: 50%;
   transform: translateY(-50%);
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   background-color: purple;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 50px;
+  padding-left: 5px;
+  box-shadow: 0 2px 25px rgba(121, 31, 77, 0.5);
 }
 
 .back {
   cursor: pointer;
   position: absolute;
-  left: -25px;
+  left: -40px;
   top: 50%;
   transform: translateY(-50%);
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   background-color: purple;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 50px;
+  padding-right: 5px;
+  box-shadow: 0 2px 25px rgba(121, 31, 77, 0.5);
 }
 
 *,
