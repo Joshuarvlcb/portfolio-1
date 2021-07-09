@@ -11,8 +11,7 @@
 }
 
 .contact-con {
-  width: 60vw;
-  height: 600px;
+  height: 450px;
   display: flex;
 }
 
@@ -82,22 +81,42 @@
 }
 
 .contact-con__form__actual {
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 .contact-con__form__input {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   width: 100%;
-  width: 240px;
   border: none;
-  border-bottom: 2px solid purple;
+  border-bottom: 2px solid #5c5c5c;
   background-color: transparent;
   outline: none;
 }
 
 .contact-con__form__button {
+  margin-top: 40px;
   align-self: flex-end;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 25px rgba(121, 31, 77, 0.5);
+}
+
+.input-boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .i {
@@ -106,34 +125,77 @@
 
 .i label {
   position: absolute;
-  left: 13px;
-  bottom: 28px;
-  color: gray;
+  left: 10px;
+  bottom: 35px;
+  color: #525252;
+  text-transform: capitalize;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
 }
 
 .i input:focus ~ label {
   transform: translateY(-20px);
+  color: black;
 }
 
 .i .underline {
   position: absolute;
-  bottom: 20px;
+  bottom: 25px;
   height: 2px;
-  width: 100%;
+  width: 96%;
 }
 
 .i .underline::before {
   content: "";
   position: absolute;
   height: 100%;
-  width: 100%;
-  background: #145e0b;
+  width: 96%;
+  background: #8e3ef8;
   transition: transform 0.2s ease;
   transform: scaleX(0);
 }
 
 .i input:focus ~ .underline:before {
+  transform: scaleX(1);
+}
+
+.m {
+  position: relative;
+}
+
+.m label {
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0px;
+  bottom: 35px;
+  color: #525252;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.m input:focus ~ label {
+  transform: translateY(-20px);
+  color: black;
+}
+
+.m .underline {
+  position: absolute;
+  bottom: 25px;
+  height: 2px;
+  width: 100% !important;
+}
+
+.m .underline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100% !important;
+  background: #bd94f3;
+  transition: transform 0.2s ease;
+  transform: scaleX(0);
+}
+
+.m input:focus ~ .underline:before {
   transform: scaleX(1);
 }
 
@@ -211,9 +273,10 @@ footer .email {
   text-decoration: none;
   font-weight: 600;
   font-size: 19px;
+  transition: all ease 0.2s;
 }
 
 .resume-btn:hover {
-  color: red;
+  color: #5e0656;
 }
 /*# sourceMappingURL=contact.min.css.map */

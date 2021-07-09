@@ -12,7 +12,7 @@
 
 .contact-con {
   width: 60vw;
-  height: 600px;
+  height: 500px;
   display: flex;
 }
 
@@ -27,17 +27,19 @@
 .contact-con__info__title {
   letter-spacing: 1px;
   font-size: 29px;
-  padding-left: 15px;
-  margin-top: 20px;
+  margin-left: 20px;
+  margin-top: 30px;
   padding-bottom: 1px;
   text-align: left;
   width: 100%;
+  padding-right: 40px;
 }
 
 .contact-con__info__para {
   text-align: left;
   width: 100%;
-  padding-left: 15px;
+  margin-left: 20px;
+  padding-right: 40px;
   color: rgba(255, 255, 255, 0.644);
   margin-bottom: 60px;
 }
@@ -55,7 +57,7 @@
 }
 
 .contact-con__form {
-  padding: 50px;
+  padding: 0 50px;
   flex-direction: column;
   display: flex;
   flex: 0 0 60%;
@@ -64,20 +66,110 @@
   background-color: #e7e7e7;
 }
 
+.contact-con__form__title {
+  color: #5b1b80;
+  margin-top: 30px;
+  font-size: 29px;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-con__form__para {
+  color: black;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+}
+
 .contact-con__form__actual {
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .contact-con__form__input {
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   width: 100%;
-  padding: 5px;
-  width: 240px;
+  border: none;
+  border-bottom: 2px solid purple;
+  background-color: transparent;
+  outline: none;
 }
 
 .contact-con__form__button {
   align-self: flex-end;
+}
+
+.input-boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.i {
+  position: relative;
+}
+
+.i label {
+  position: absolute;
+  left: 10px;
+  bottom: 35px;
+  color: #525252;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.i input:focus ~ label {
+  transform: translateY(-20px);
+}
+
+.i .underline {
+  position: absolute;
+  bottom: 25px;
+  height: 2px;
+  width: 96%;
+}
+
+.i .underline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 96%;
+  background: #bd94f3;
+  transition: transform 0.2s ease;
+  transform: scaleX(0);
+}
+
+.i input:focus ~ .underline:before {
+  transform: scaleX(1);
+}
+
+.m label {
+  position: absolute;
+  bottom: 35px;
+  color: #525252;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.m .underline {
+  position: absolute;
+  bottom: 25px;
+  height: 2px;
+  width: 100% !important;
+}
+
+.m .underline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100% !important;
+  background: #bd94f3;
+  transition: transform 0.2s ease;
+  transform: scaleX(0);
+}
+
+.m input:focus ~ .underline:before {
+  transform: scaleX(1);
 }
 
 .message {

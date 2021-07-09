@@ -8,8 +8,7 @@
     font-weight: bold;
   }
   &-con {
-    width: 60vw;
-    height: 600px;
+    height: 450px;
     display: flex;
     &__info {
       display: flex;
@@ -72,48 +71,105 @@
       height: 100%;
       background-color: rgb(231, 231, 231);
       &__actual {
-        margin-top: 45px;
+        margin-top: 50px;
       }
       &__input {
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin-bottom: 25px;
+        margin-top: 25px;
         width: 100%;
-        width: 240px;
+
         border: none;
-        border-bottom: 2px solid purple;
+        border-bottom: 2px solid rgb(92, 92, 92);
         background-color: transparent;
         outline: none;
       }
       &__button {
+        margin-top: 40px;
         align-self: flex-end;
+        cursor: pointer;
+        padding: 0.5rem 1.5rem;
+        background-color: purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        box-shadow: 0 2px 25px rgba(121, 31, 77, 0.5);
       }
     }
   }
+}
+.input-boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .i {
   position: relative;
   label {
     position: absolute;
-    left: 13px;
-    bottom: 28px;
-    color: gray;
+    left: 10px;
+    bottom: 35px;
+    color: rgb(82, 82, 82);
+    text-transform: capitalize;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
   }
   input:focus ~ label {
     transform: translateY(-20px);
+    color: black;
   }
   .underline {
     position: absolute;
-    bottom: 20px;
+    bottom: 25px;
     height: 2px;
-    width: 100%;
+    width: 96%;
     &::before {
       content: "";
-
       position: absolute;
       height: 100%;
-      width: 100%;
-      background: rgb(20, 94, 11);
+      width: 96%;
+      background: rgb(142, 62, 248);
+      transition: transform 0.2s ease;
+      transform: scaleX(0);
+    }
+  }
+  input:focus ~ .underline:before {
+    transform: scaleX(1);
+  }
+}
+.m {
+  position: relative;
+  label {
+    letter-spacing: 1px;
+
+    position: absolute;
+    left: 0px;
+    bottom: 35px;
+    color: rgb(82, 82, 82);
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+  }
+  input:focus ~ label {
+    transform: translateY(-20px);
+    color: black;
+  }
+  .underline {
+    position: absolute;
+    bottom: 25px;
+    height: 2px;
+    width: 100% !important;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100% !important;
+      background: rgb(189, 148, 243);
       transition: transform 0.2s ease;
       transform: scaleX(0);
     }
@@ -190,7 +246,8 @@ footer {
   text-decoration: none;
   font-weight: 600;
   font-size: 19px;
+  transition: all ease 0.2s;
 }
 .resume-btn:hover {
-  color: rgb(255, 0, 0);
+  color: rgb(94, 6, 86);
 }
