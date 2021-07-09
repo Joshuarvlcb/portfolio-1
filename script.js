@@ -384,8 +384,8 @@ next.addEventListener("click", (e) => {
   console.log(page);
 
   clearstate();
-  let name = document.createElement("div");
-  let para = document.createElement("div");
+  let name = document.createElement("p");
+  let para = document.createElement("p");
   para.className = "testi-con__content__para";
   name.className = "testi-con__content__name";
   name.textContent = testismonials[page].name;
@@ -406,8 +406,8 @@ back.addEventListener("click", (e) => {
 
     back.style.display = "none";
 
-    let name = document.createElement("div");
-    let para = document.createElement("div");
+    let name = document.createElement("p");
+    let para = document.createElement("p");
     para.className = "testi-con__content__para";
     name.className = "testi-con__content__name";
     name.textContent = testismonials[page].name;
@@ -420,8 +420,8 @@ back.addEventListener("click", (e) => {
 
   clearstate();
 
-  let name = document.createElement("div");
-  let para = document.createElement("div");
+  let name = document.createElement("p");
+  let para = document.createElement("p");
   para.className = "testi-con__content__para";
   name.className = "testi-con__content__name";
   name.textContent = testismonials[page].name;
@@ -432,8 +432,8 @@ back.addEventListener("click", (e) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  let name = document.createElement("div");
-  let para = document.createElement("div");
+  let name = document.createElement("p");
+  let para = document.createElement("p");
   para.className = "testi-con__content__para";
   name.className = "testi-con__content__name";
   name.textContent = testismonials[page].name;
