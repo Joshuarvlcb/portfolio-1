@@ -83,12 +83,16 @@
 .testi-con__content__para {
   display: inline;
   line-height: 2;
+  transition: opacity 0.4s ease-in;
+  opacity: 0;
   margin-top: 20px;
 }
 
 .testi-con__content__name {
   margin-top: 35px;
   text-align: left;
+  transition: opacity 0.2s ease;
+  opacity: 0;
   width: 100%;
   font-weight: bold;
   font-size: 25px;

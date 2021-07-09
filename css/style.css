@@ -107,7 +107,6 @@
   font-size: 20px;
   outline: none;
   border: none;
-  border-radius: 5px;
   text-transform: capitalize;
   letter-spacing: 1px;
   box-shadow: 0 2px 25px rgba(121, 31, 77, 0.5);
@@ -354,6 +353,7 @@ footer .email {
   position: relative;
   flex: 0 0 6;
   padding: 50px;
+  transition: all 0.3s ease;
   height: 100%;
   color: black;
   display: flex;
@@ -365,10 +365,11 @@ footer .email {
 .testi-con__content__para {
   display: inline;
   line-height: 2;
+  margin-top: 20px;
 }
 
 .testi-con__content__name {
-  margin-top: 50px;
+  margin-top: 35px;
   text-align: left;
   width: 100%;
   font-weight: bold;
@@ -768,7 +769,7 @@ header {
 }
 
 .skills-container .skills-title {
-  margin-top: 15vh;
+  margin-top: 100px;
   margin-bottom: 60px;
   color: white;
   font-size: 43px;

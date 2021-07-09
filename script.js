@@ -365,6 +365,9 @@ const lalo = new Testimonial(
 let testismonials = [perla, saul, lalo];
 const contentParent = document.querySelector(".testi-con__content");
 const clearstate = () => {
+  contentParent.querySelector(".testi-con__content__name").style.opacity = "0";
+  contentParent.querySelector(".testi-con__content__para").style.opacity = "0";
+
   while (contentParent.firstChild) {
     contentParent.removeChild(contentParent.firstChild);
   }
@@ -393,6 +396,11 @@ next.addEventListener("click", (e) => {
   console.log("hi");
   contentParent.appendChild(para);
   contentParent.appendChild(name);
+
+  setTimeout(() => {
+    name.style.opacity = "100";
+    para.style.opacity = "100";
+  }, 200);
 });
 back.addEventListener("click", (e) => {
   page--;
@@ -415,6 +423,10 @@ back.addEventListener("click", (e) => {
     console.log("hi");
     contentParent.appendChild(para);
     contentParent.appendChild(name);
+    setTimeout(() => {
+      name.style.opacity = "100";
+      para.style.opacity = "100";
+    }, 200);
   }
   if (page == 0) return;
 
@@ -429,6 +441,10 @@ back.addEventListener("click", (e) => {
   console.log("hi");
   contentParent.appendChild(para);
   contentParent.appendChild(name);
+  setTimeout(() => {
+    name.style.opacity = "100";
+    para.style.opacity = "100";
+  }, 200);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -439,7 +455,10 @@ document.addEventListener("DOMContentLoaded", () => {
   name.textContent = testismonials[page].name;
   para.textContent = testismonials[page].quote;
   console.log("hi");
+  name.style.opacity = "100";
+  para.style.opacity = "100";
   contentParent.appendChild(para);
   contentParent.appendChild(name);
+
   back.style.display = "none";
 });
