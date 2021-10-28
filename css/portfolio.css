@@ -1,37 +1,37 @@
 .card_side {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 2rem;
-  -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
   position: absolute;
   height: 440px;
   top: 0;
   left: 0;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 3px;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
   width: 300px;
 }
 
 .card:hover .front-card {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card:hover .back-card {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+.form-select {
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 4px #941478 solid;
+  color: #882aad;
+}
+
+.form-select:focus {
+  border: 4px #941478 solid;
 }
 
 .portfolio {
@@ -44,7 +44,9 @@
   font-size: 43px;
   color: #941478;
   font-weight: 800;
+  display: inline;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .projects-title {
@@ -56,21 +58,12 @@
 .card-container {
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -ms-grid;
+  justify-content: center;
+  align-items: center;
   display: grid;
-  -ms-grid-columns: (330px)[3];
-      grid-template-columns: repeat(3, 330px);
-  -ms-grid-rows: (440px)[2];
-      grid-template-rows: repeat(2, 440px);
+  grid-template-columns: repeat(3, 330px);
+  grid-template-rows: repeat(2, 440px);
   grid-gap: 50px;
 }
 
@@ -83,21 +76,21 @@
 }
 
 .card-header.mastermind {
-  background-image: url(./mastermind.png);
+  background-image: url(mastermind.png);
 }
 
 .card-header.todo {
-  background-image: url(todo-final.png);
+  background-image: url(todo.png);
   background-position: center;
   background-size: cover;
 }
 
-.card-header.pokedex {
-  background-image: url(pokedex.png);
+.card-header.atlas {
+  background-image: url(atlas-page.png);
 }
 
 .card-header.calc {
-  background-image: url(calc-pic.png);
+  background-image: url(calc.png);
 }
 
 .tools-container.mastermind-color {
@@ -123,6 +116,7 @@
   background-color: #e7e7e7;
   border-radius: 5px;
   border: none;
+  margin: 25px !important;
 }
 
 .card-header {
@@ -137,7 +131,12 @@
 }
 
 .card-header.quiz {
-  background-image: url(quiz-pic.png);
+  background-image: url(quiz.png);
+}
+
+.card-header.tic {
+  background-size: cover;
+  background-image: url(tic-tac-toe.png);
 }
 
 .heading-text h3 {
@@ -167,15 +166,9 @@
   height: 80px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   width: 100%;
 }
 
@@ -184,12 +177,8 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0;
 }
 
@@ -199,12 +188,8 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-left: 22px;
 }
 
@@ -215,12 +200,8 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding-right: 8px;
 }
 
@@ -230,16 +211,10 @@
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   width: 115.77px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding-right: 20px;
   padding-left: 15px;
 }
@@ -270,24 +245,14 @@
 }
 
 .back-card {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   height: 440px;
   min-width: 290px;
   background-color: #ff768d;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
   padding: 30px 0;
 }
 
@@ -297,15 +262,9 @@
   background-color: white;
   border-radius: 30px;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: black;
   font-weight: 700;
   font-size: 20px;
@@ -314,81 +273,6 @@
 .back-card .button a {
   text-decoration: none;
   color: #ff768d;
-}
-
-footer .footer {
-  height: 130px;
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#882aad), to(#9c11a8));
-  background: linear-gradient(to right, #882aad, #9c11a8);
-}
-
-footer .links-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 130px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer ul {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 0px;
-  margin-bottom: 0px;
-}
-
-footer ul li {
-  list-style: none;
-  cursor: pointer;
-  font-size: 20px;
-  text-transform: capitalize;
-  color: white;
-}
-
-footer ul .resume {
-  padding-top: 18px;
-}
-
-footer ul .resume button {
-  background-color: white;
-  color: #ffffff;
-  outline: none;
-  padding: 6px 10px;
-  border: none;
-  border-radius: 3px;
-  text-transform: capitalize;
-}
-
-footer .email {
-  border-top: 2px solid white;
-  color: white;
-  padding-top: 40px;
-  font-size: 20px;
-}
-
-.resume-btn {
-  color: #ff0a0a;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 19px;
-}
-
-.resume-btn:hover {
-  color: #ff0000;
 }
 
 /* 

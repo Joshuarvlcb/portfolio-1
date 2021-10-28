@@ -1,3 +1,6 @@
+@import "./contact.scss";
+@import "./testimonial.scss";
+
 *,
 *::after,
 *::before {
@@ -35,10 +38,152 @@ header {
   height: 100%;
   z-index: -3;
 }
-.logo-container {
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  background-color: #e7e7e7;
+  .links {
+    width: 100%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+
+    justify-content: space-evenly;
+    .link {
+      list-style: none;
+      cursor: pointer;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: rgb(168, 37, 151);
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+  }
+}
+.cube-con {
   position: absolute;
-  top: 30px;
-  left: 20px;
+  top: 25%;
+  right: 10%;
+}
+.cube {
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+}
+.cube__faces {
+  animation: spin infinite linear 35s;
+  position: relative;
+  width: 300px;
+  transform-style: preserve-3d;
+}
+.cubeface {
+  outline: 1px solid #31002b;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  opacity: 0.75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.cubefront {
+  transform: translateZ(150px);
+  background-color: rgb(117, 93, 139);
+  img {
+    height: 90%;
+  }
+}
+.cubeback {
+  transform: translateZ(-150px) rotateY(180deg);
+  background-color: rgb(95, 76, 110);
+  img {
+    height: 80%;
+  }
+}
+.cuberight {
+  transform: rotateY(-270deg) translateX(150px);
+  transform-origin: top right;
+  background-color: #46384b;
+  img {
+    height: 80%;
+  }
+}
+.cubetop {
+  transform: rotateX(-90deg) translateY(-150px);
+  transform-origin: top center;
+  background-color: #604e68;
+}
+.cubebottom {
+  transform: rotateX(90deg) translateY(150px);
+  transform-origin: bottom center;
+  background-color: #6a546e;
+}
+.cubeleft {
+  transform: rotateY(270deg) translateX(-150px);
+  transform-origin: center left;
+  background-color: #8a618a;
+  img {
+    height: 100%;
+  }
+}
+.ham {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.ham-1 {
+  width: 40px;
+  height: 6px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+.ham-1::before,
+.ham-1::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+}
+.ham-1::before {
+  transform: translateY(-16px);
+}
+.ham-1::after {
+  transform: translateY(16px);
+}
+.ham-1.open {
+  transform: translateX(-50px);
+  background-color: transparent;
+  box-shadow: none;
+}
+.ham-1.open::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.ham-1.open::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 .logo {
   height: 85px;
@@ -66,6 +211,17 @@ header {
   color: white;
   letter-spacing: 15px;
   width: 1000px;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.none {
+  display: none;
 }
 .title {
   display: block;
@@ -98,34 +254,39 @@ header {
 }
 .project-btn {
   background-color: white;
+  color: rgb(0, 102, 255);
+
   font-weight: 700;
-  color: rgb(250, 10, 10);
   font-size: 1.3rem;
   letter-spacing: 1.5px;
 }
 
 .about-page {
+  position: relative;
   width: 100vw;
   background-color: #e7e7e7;
-  position: relative;
 
   .about-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
     h1 {
-      color: rgb(148, 20, 120);
-      font-size: 40px;
+      color: #b132b1;
+      font-weight: bold;
+      font-size: 43px;
+      letter-spacing: 2px;
+      margin-top: 4vh;
+      text-transform: uppercase;
     }
   }
   .con {
-    padding-top: 6vh;
-    padding-bottom: 6vh;
+    padding-top: 4vh;
+    padding-bottom: 15vh;
   }
   .content-about {
     p {
-      // padding: 0 80px;
+      padding: 0 80px;
+      color: rgba(0, 0, 0, 0.808);
       margin-bottom: 30px;
       font-size: 1.2em;
     }
@@ -133,6 +294,8 @@ header {
       text-align: center;
       width: 100%;
       color: #b132b1;
+      font-weight: 550;
+      letter-spacing: 1px;
       text-transform: uppercase;
       margin-bottom: 20px;
     }
@@ -142,7 +305,7 @@ header {
 .skills-container {
   width: 100vw;
   display: flex;
-  // margin-top: -268px;
+
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -159,15 +322,15 @@ header {
   // clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 
   .skills-title {
-    margin-top: 10vh;
+    margin-top: 100px;
     margin-bottom: 60px;
     color: rgb(255, 255, 255);
-    font-size: 48px;
+    font-size: 43px;
     font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
   }
-.skills-content{
-  margin-bottom: 10vh;
-}
+
   .section-title {
     color: peru;
     font-size: 36px;
@@ -296,6 +459,65 @@ header {
 .node {
   width: 40%;
 }
+@media only screen and (max-width: 995px) {
+  .skills-container {
+    margin-top: -230px;
+    .skills-title {
+      margin-top: 23vh;
+    }
+  }
+  .con {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .cube-con {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    padding-bottom: 0px;
+    margin-bottom: 10vh;
+    margin-top: 2vh;
+  }
+  .cubeface {
+    width: 200px;
+    height: 200px;
+  }
+  .cube__faces {
+    width: 200px;
+    height: 200px !important;
+  }
+  .cubefront {
+    transform: translateZ(150px);
+    background-color: rgb(117, 93, 139);
+  }
+  .cubeback {
+    transform: translateZ(-50px) rotateY(180deg);
+    background-color: rgb(95, 76, 110);
+  }
+  .cuberight {
+    transform: rotateY(-270deg) translateX(50px);
+    transform-origin: top right;
+    background-color: #46384b;
+  }
+  .cubetop {
+    transform: rotateX(-90deg) translateY(-150px);
+    transform-origin: top center;
+    background-color: #604e68;
+  }
+  .cubebottom {
+    transform: rotateX(90deg) translateY(150px);
+    transform-origin: bottom center;
+    background-color: #6a546e;
+  }
+  .cubeleft {
+    transform: rotateY(270deg) translateX(-50px);
+    transform-origin: center left;
+    background-color: #8a618a;
+  }
+}
+
 @media only screen and (max-width: 1150px) {
   .name {
     display: block;
@@ -304,6 +526,7 @@ header {
     color: white;
     letter-spacing: 15px;
     width: 800px;
+    padding: 0 30px;
   }
   .title {
     display: block;
@@ -312,7 +535,6 @@ header {
     letter-spacing: 18px;
     color: #ffffff;
   }
-
 }
 
 @media only screen and (max-width: 780px) {
@@ -336,8 +558,6 @@ header {
     top: 40px;
     left: 30px;
   }
-
-
 }
 
 @media only screen and (max-width: 650px) {
@@ -375,10 +595,10 @@ header {
     }
     .con {
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
     }
-   
+
     .content-about {
       display: flex;
       align-items: flex-start;
@@ -408,7 +628,7 @@ header {
 
   .name {
     display: block;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 500;
     color: white;
     letter-spacing: 10px;
@@ -416,7 +636,7 @@ header {
   }
   .title {
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 5px;
     color: #ffffff;
@@ -447,7 +667,6 @@ header {
   }
 }
 @media only screen and (max-width: 450px) {
- 
   .name {
     display: block;
     font-size: 40px;
@@ -487,28 +706,37 @@ header {
     left: 20px;
   }
 }
+.col {
+  padding: 0px;
+}
 
+.progress {
+  letter-spacing: 1px;
+}
 @media only screen and (max-width: 405px) {
   .vid {
     display: none;
   }
-
+  .gradient {
+    background-image: linear-gradient(to top left, #9d29a8a4 0%, #751f6ebe 100%),
+      url(./mpic.png);
+    background-size: cover;
+    background-position: center;
+  }
   .name {
     display: block;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 500;
     color: white;
     letter-spacing: 5px;
-    width: 300px;
-    margin: 0px;
+    margin-right: 0px;
   }
   .title {
     display: block;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 3px;
     color: #ffffff;
-    width: 300px;
   }
   .heading-text {
     margin-bottom: 30px;
@@ -572,7 +800,6 @@ header {
     left: 20px;
   }
 
-
   .about-page {
     .icons {
       img {
@@ -581,5 +808,109 @@ header {
     }
   }
 }
-//add parials
-//make the page faster the video is making it slower
+
+.NavbarItems {
+  position: relative;
+}
+.header__logo {
+  font-size: 1.2rem;
+}
+.header__number {
+  display: none;
+}
+.none {
+  display: none;
+}
+
+.nav {
+  &__link:visited,
+  &__link:link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 0px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    display: table;
+    letter-spacing: 3px;
+    font-family: "Fira Sans", sans-serif;
+    color: #fdfdfd;
+  }
+  &__link:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+  }
+  &__item {
+    width: 100%;
+  }
+  &__item:hover {
+    background-color: transparent;
+  }
+}
+
+.nav-active {
+  background: #772d7e;
+  opacity: 1;
+  padding-left: 0px;
+  top: 0;
+  transition: all 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  position: fixed;
+  left: -100%;
+}
+
+.nav-links {
+  text-align: center;
+  width: 100%;
+  display: table;
+}
+
+.nav-item:hover {
+  border: none;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.navbar-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(25%, 50%);
+}
+
+.menu-icon {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, 60%);
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1111;
+  font-size: 3rem;
+}
+
+.fa-times {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+}
+.none {
+  opacity: 0;
+}

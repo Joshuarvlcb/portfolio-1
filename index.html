@@ -13,10 +13,14 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/testimonial.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
     <!-- Landing -->
@@ -33,168 +37,78 @@
                 </section> 
         </div> -->
     <header>
+      <!-- fix the giphy make it faster
+           get rid of padding right in p for about page
+           add jquery to show js react scss
+       -->
       <!-- background video -->
       <div class="gradient">
+        <ul class = 'nav-active none'>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Porfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Contact Me
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Testimonial
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Skills
+              </a>
+            </li>
+            
+          </ul>
         <div class="vid-container">
-          <img class="vid" src="citys.gif" alt="">
+ <video autoplay muted loop class="vid">
+            <source
+              src="./mylivewallpapers.com-Retro-Skyscrapers.mp4"
+              type="video/mp4"
+            />
+  </video>
         </div>
       </div>
 
-      <div class="logo-container">
-        <img src="./JR-logo.png" alt="LOGO" class="logo" />
+      <div class="ham">
+        <div class="ham-1">
+        </div>
       </div>
       <div class="content-box">
         <h1 class="heading-text">
           <span class="name">Joshua Ruvalcaba</span>
-          <span class="title">Front end developer</span>
+          <span class="title">Full Stack Engineer</span>
         </h1>
         <a href="#skills" class="btn project-btn">See Projects</a>
       </div>
     </header>
 
-<div class="about-page">
-  <div class="about-title">
-    <h1>About Me</h1>
-  </div>
-<div class="row d-flex justify-content con">
-  
-<div class=" col col-lg-8 col-sm-12 d-flex justify-content-center align-items-center flex-column" style="padding-left:10vw;">
-  <div class="content-about">
-    <h5>Motivated to produce results</h4>
-   
-    <p>      
-      As a coding student in West-Mec I challenge myself everyday to improve my skills and learn new technologies in my free time
-    </p>
-</div>
-<div class="content-about">
-    <h5>Agile Software Development</h4>
-   <p>I have contributed in a project with a team following the Agile methodology principles to write efficient code and effective communication with team members to create the best code possible.</p>
-</div>
-</div>
-<div class="col col-lg-4 icons d-flex align-items-center justify-content-evenly " style="padding-right:6vw;" >
-  <div class="d-flex justify-content-center"><img width="170px" src="./jsIcon.png" alt="JavaScript icon"></div>
-  <div class="d-flex justify-content-center" ><img width="170px" src="./reactIcon.png" alt="React js icon" ></div>
-</div>
 
 </div>
 
-</div>
-</div>
-
-
-    <!-- skills -->
-    <div class="skills-container">
-      <div class="skills-title">My Skills</div>
-      <div class="background"></div>
-      <div class="skills container" id="skiils">
-        <div class="row skills-content">
-          <div class="col-lg-6">
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar html" style="width: 80%">
-                  <span class="skill"
-                    ><div class="html-width">html</div>
-                    <i class="val">80%</i></span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar css" style="width: 70%">
-                  <span class="skill"
-                    ><div class="css-width">css</div>
-                    <i class="val">70%</i></span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar js" style="width: 70%">
-                  <span class="skill"
-                    ><div class="js-width">js</div>
-                    <i class="val">70%</i></span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar node" style="background-color: rgb(166, 221, 82);">
-                  <span class="skill"
-                    ><div class="bootstrap-width" style="background-color:rgb(123, 167, 58)">Node</div>
-                    <i class="val bootstrap-percent">30%</i></span
-                  >
-                </div>
-              </div>
-            </div>
-
-            
-          </div>
-          <div class="col-lg-6">
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar sass" style="width: 70%">
-                  <span class="skill"
-                    ><div class="sass-width">sass</div>
-                    <i class="val">70%</i></span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar jquery" style="width: 60%">
-                  <span class="skill">
-                    <div class="jquery-width">jQuery</div>
-                    <i class="val">50%</i></span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <div class="progress-bar-wrap">
-                <div class="progress-bar bootstrap" style="width: 70%">
-                  <span class="skill"
-                    ><div class="bootstrap-width">bootstrap</div>
-                    <i class="val bootstrap-percent">70%</i></span
-                  >
-                </div>
-              </div>
-            </div>
-
-              <div class="progress">
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar bootstrap" style="width: 55%; background-color: lightblue ">
-                    <span class="skill"
-                      ><div class="bootstrap-width" style = "background-color:rgb(106, 182, 207)">react</div>
-                      <i class="val bootstrap-percent">55%</i></span
-                    >
-                  </div>
-                </div>
-              </div>
-
-           
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio">
-      <div class="projects-title">
+<div class="portfolio">
+      <div class="projects-title d-flex justify-content-evenly align-items-center flex-lg-row flex-column">
         <h1 id="skills">Projects</h1>
+
+      <select class="form-select" style="width: 200px;box-shadow: none;" id='select'>
+          
+        <option  value="react" selected = 'selected'>react</option>
+          <option  value="game" >games</option>
+          <option  value="all">all</option>
+       </select>
+
       </div>
-      <div class="row">
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-        <div class="card ">
+     
+        
+      <div class="row"  >
+        <div class="  col col-lg-4 flex games" style="height: 440px;margin-bottom: 80px;">
+        <div class="card">
           <div class="front-card card_side">
             <div class="card-header quiz"></div>
             <div class="heading-text">
@@ -230,7 +144,7 @@
         </div>
         </div>
 
-        <div class=" col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+        <div class=" col col-lg-4 flex games" style="height: 440px;margin-bottom: 80px;">
           <div class="card">
           <div class="front-card card_side">
             <div class="card-header mastermind"></div>
@@ -267,15 +181,52 @@
           </div>
         </div>
         </div>
-                <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+        <div class=" col col-lg-4 flex games" style="height: 440px;margin-bottom: 80px;">
+          <div class="card">
+          <div class="front-card card_side">
+            <div class="card-header mastermind"></div>
+            <div class="heading-text">
+              <h3 class="mastermind">Sudoku</h3>
+              <h4>
+                This is a mastermind game that I built in class I practiced a
+                lot of DOM traversal and how a lot of different DOM methods work
+                I also put into practice Css Grid for the layout
+              </h4>
+            </div>
+            <div class="tools-container mastermind-color">
+              <div class="mastermind-tool html ">html</div>
+              <div class="mastermind-tool css">css/sass</div>
+              <div class="mastermind-tool js">js</div>
+            </div>
+          </div>
+          <div class="back-card card_side">
+            <div class="button">
+              <a
+                href="https://joshuarvlcb.github.io/sudoku/"
+                target="_blank"
+                >View Website</a
+              >
+            </div>
+            <div class="button">
+              <a
+                class="code"
+                href="https://github.com/Joshuarvlcb/sudoku"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+        </div>
+                <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 80px;">
 
         <div class="card">
           <div class="front-card card_side">
-            <div class="card-header todo"></div>
+            <div class="card-header "></div>
             <div class="heading-text todo">
-              <h3 class="todo">Todo-list</h3>
+              <h3 class="todo">place holder</h3>
               <h4>
-                This is a todo list I created with a very Modern UI I learn how to use a diagram to plan out how I am going to implemnet the logic that way I can code it faster I also put into practice localStorage so whenever you refresh the page the list will stay on the window 
+             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit dicta, dolorum quod exercitationem est vero voluptatibus sed! Deserunt officia voluptate error voluptates, suscipit quasi laboriosam commodi adipisci facilis illum sit praesentium numquam facere ut quam laudantium illo qui tenetur omnis.
               </h4>
             </div>
             <div class="tools-container todo-color">
@@ -304,13 +255,13 @@
           </div>
         </div>
                 </div>
-                <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+                <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 60px;">
 
         <div class="card">
           <div class="front-card card_side">
-            <div class="card-header pokedex"></div>
+            <div class="card-header atlas"></div>
             <div class="heading-text">
-              <h3>Pokedex</h3>
+              <h3>place holder</h3>
               <h4>
                 This was a group project I created the the home page and cards we also created the card pages with JavaScript by creating elements and getting the content from a JSON file I also learned about destructuring which saved a lot of time and energy
               </h4>
@@ -342,13 +293,13 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 80px;">
 
         <div class="card">
           <div class="front-card card_side">
-            <div class="card-header calc"></div>
+            <div class="card-header "></div>
             <div class="heading-text ">
-              <h3 class="calc-text">Calculator</h3>
+              <h3 class="calc-text">place holder</h3>
               <h4>
                I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
               </h4>
@@ -378,13 +329,13 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 80px;">
 
         <div class="card">
           <div class="front-card card_side">
-            <div class="card-header calc"></div>
+            <div class="card-header "></div>
             <div class="heading-text ">
-              <h3 class="calc-text">Sudoku</h3>
+              <h3 class="calc-text">place holder</h3>
               <h4>
                I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
               </h4>
@@ -398,7 +349,7 @@
             <div class="back-card card_side">
                <div class="button">
               <a
-                href=https://joshuarvlcb.github.io/calculator/"
+                href="https://joshuarvlcb.github.io/sudoku/"
                 target="_blank"
                 >View Website</a
               >
@@ -414,227 +365,12 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+    
+        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 80px;">
 
         <div class="card">
           <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Tic-Tac-Toe</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href="https://joshuarvlcb.github.io/new-tictactoe/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/new-tictactoe"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">React-Todo-List</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Bootstrap</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Atlas</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Calculator</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
-            <div class="heading-text ">
-              <h3 class="calc-text">Calculator</h3>
-              <h4>
-               I created this calculator by using a class and giving it all the methods i would would need for the calculator.It would be easier to manipulate the data from the object that I created from the class because they are reference types 
-              </h4>
-            </div>
-            <div class="tools-container calc-color">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-            <div class="back-card card_side">
-               <div class="button">
-              <a
-                href=https://joshuarvlcb.github.io/calculator/"
-                target="_blank"
-                >View Website</a
-              >
-            </div>
-            <div class="button">
-              <a
-                class="code"
-                href="https://github.com/Joshuarvlcb/calculator"
-                target="_blank"
-                >View Code</a
-              >
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header calc"></div>
+            <div class="card-header "></div>
             <div class="heading-text ">
               <h3 class="calc-text">Calculator</h3>
               <h4>
@@ -667,11 +403,11 @@
         </div>
         </div>
 
-        <div class="col col-lg-4 d-flex justify-content-center" style="height: 500px;">
+        <div class="col col-lg-4 flex react"  style="height: 440px;margin-bottom: 150px;">
 
         <div class="card">
           <div class="front-card card_side">
-            <div class="card-header calc"></div>
+            <div class="card-header "></div>
             <div class="heading-text ">
               <h3 class="calc-text">Calculator</h3>
               <h4>
@@ -703,36 +439,324 @@
           </div>
         </div>
         </div>
-        <div class="col col-lg-4 d-flex justify-content-center" style="margin-bottom: 250px;">
-
-        <div class="card">
-          <div class="front-card card_side">
-            <div class="card-header"></div>
-            <div class="heading-text">
-              <h3>Tic-Tac-Toe</h3>
-              <h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                harum accusamus minima unde assumenda! Illo deserunt minima
-                eveniet rem, voluptatem quia dolorem odit ipsum placeat dolores
-                magnam. Delectus, molestiae autem.
-              </h4>
-            </div>
-            <div class="tools-container">
-              <div class="html">html</div>
-              <div class="css">css/sass</div>
-              <div class="js">js</div>
-            </div>
-          </div>
-          <div class="back-card card_side">
-            <div class="button">view site</div>
-          </div>
-        </div>
-</div>
       
        
       </div>
-      <footer>
-        <div class="footer">
+    </div>
+  
+    <!-- skills -->
+    <div class="skills-container">
+      <div class="skills-title">My Skills</div>
+      <div class="background"></div>
+      <div class="skills container" id="skiils">
+        <div class="row skills-content">
+          <div class="col-lg-6">
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar html" style="width: 100%">
+                  <span class="skill"
+                    ><div class="html-width">html</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar css" style="width: 100%">
+                  <span class="skill"
+                    ><div class="css-width">css</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar js" style="width: 100%">
+                  <span class="skill"
+                    ><div class="js-width">js</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap" >
+                <div class="progress-bar " style="width: 100%;background-color: rgb(49, 209, 102);">
+                  <span class="skill"
+                    ><div class="bootstrap-width" style="background-color:rgb(20, 148, 52)">Node</div>
+                   
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(136, 210, 235) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(90, 184, 216)">react</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(92, 175, 202) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(44, 116, 158)">typescript</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+                 <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(236, 125, 125) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(161, 66, 66)">mongoose</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+
+                 <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: #FFE873 ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:#dfb92f">python</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar sass" style="width: 100%">
+                  <span class="skill"
+                    ><div class="sass-width">sass</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar jquery" style="width: 100%">
+                  <span class="skill">
+                    <div class="jquery-width">jQuery</div>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class="progress-bar-wrap">
+                <div class="progress-bar bootstrap" style="width: 100%">
+                  <span class="skill"
+                    ><div class="bootstrap-width">bootstrap</div>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+                  <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(89, 156, 75) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(56, 105, 65)">mongodb</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+   <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" style="width: 100%; background-color: rgb(187, 121, 231) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(138, 55, 194)">redux</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: #FFA611 ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:#F5820D">firebase</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: rgb(196, 196, 196) ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:rgb(110, 112, 112)">express</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+          
+           
+              <div class="progress">
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar bootstrap" style="width: 100%; background-color: #cf9a68 ">
+                    <span class="skill"
+                      ><div class="bootstrap-width" style = "background-color:#c58133">SQL</div>
+                     </span
+                    >
+                  </div>
+                </div>
+              </div>
+           
+
+           
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ <div class="about-page">
+  <div class="about-title">
+    <h1>About Me</h1>
+  </div>
+<div class="row d-flex justify-content con">
+  
+<div class=" col col-lg-8 col-sm-12 d-flex justify-content-center align-items-center flex-column" style="padding:0 6vw;">
+  <div class="content-about">
+    <h5>Motivated to produce results</h4>
+   
+    <p>      
+     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat laborum tempora commodi assumenda pariatur inventore dolores dolorem necessitatibus numquam architecto consequuntur vero, repellat maxime saepe illum iste. Sequi, suscipit. Ad laudantium tenetur natus reprehenderit deleniti nostrum. Ut rerum atque quas!
+    </p>
+</div>
+<div class="content-about">
+    <h5>Agile Software Development</h4>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda modi voluptates harum eum impedit ipsa explicabo adipisci nesciunt accusantium eligendi deleniti consequatur rerum tempora quis culpa praesentium iure quod inventore aut, nostrum reprehenderit quasi? Perspiciatis, ad vel. Ipsam, est nihil!</p>
+</div>
+</div>
+<div class="col col-lg-4 icons d-flex align-items-center justify-content-evenly "  >
+  <!-- <div class="d-flex justify-content-center"><img width="170px" src="./jsIcon.png" alt="JavaScript icon"></div>
+  <div class="d-flex justify-content-center" ><img width="170px" src="./reactIcon.png" alt="React js icon" ></div> -->
+  <div class="cube-con">
+     <div class="cube">
+    <div class="cube__faces">
+      <div class="cubeface cubefront">
+        <img src="./jsIcon.png" alt="">
+      </div>
+      <div class="cubeface cubeback">
+        <img src="./pngfind.com-js-logo-png-6833893.png" alt="">
+      </div>
+      <div class="cubeface cubeleft">
+        <img src="./reactIcon.png" alt="">
+      </div>
+      <div class="cubeface cuberight">
+                <img src="./pngaaa.com-5006425.png" alt="">
+
+      </div>
+      <div class="cubeface cubetop"></div>
+      <div class="cubeface cubebottom"></div>
+    </div>
+  </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<div class="testimonial">
+  <h1>testimonials</h1>
+  <div class="testi-con">
+      <div class="testi-con__actual">
+          <div class="testi-con__pic">
+            <div class="testi-con__pic__image">
+
+            </div>
+          </div>
+          <div class="testi-con__content">
+             
+          </div>
+          <div class="next"><ion-icon name="caret-forward-outline"></ion-icon></div>
+                    <div class="back"><ion-icon name="caret-back-outline"></ion-icon></div>
+
+      </div>
+  </div>
+  <div class="contact">
+  <h1>Contact Me</h1>
+  <div class="contact-con">
+    <div class="contact-con__info">
+      <h3 class="contact-con__info__title">Contact Information</h3>
+      <p class="contact-con__info__para">Fill up the form and I will get back to you within 24 hours.</p>
+
+      <ul class="contact-con__info__info">
+        <div class="contact-con__info__info__list">
+          <ion-icon name="call-outline" class="phone"></ion-icon>
+        <li>623-570-8710</li>
+        </div>
+        <div class="contact-con__info__info__list">
+          <ion-icon name="mail-outline" class="email"></ion-icon>
+        <li>joshuarvlcb@gmail.com</li>
+        </div>
+   <div class="contact-con__info__info__list">
+        <ion-icon name="location-outline" class="location"></ion-icon>
+        <li>Phoenix, Arizona</li>
+        </div>
+      </ul>
+    </div>
+    <div class="contact-con__form ">
+    
+      <div class="contact-con__form__actual"></div>
+      
+      <div class="row input-boxes"><div class="i  col-lg-6">
+ <input type="text" class="contact-con__form__input ">
+  <div class="underline"></div>
+
+ <label for="">first name</label>
+        </div>
+      <div class="i  col-lg-6">
+ <input type="text" class="contact-con__form__input">
+  <div class="underline"></div>
+
+  <label for="">last name</label>
+
+        </div></div>
+      <div class="row  input-boxes last"><div class="i  col-lg-6">
+ <input type="text" class="contact-con__form__input">
+ <div class="underline"></div>
+   <label for="">email</label>
+
+        </div>
+        <div class="i col-lg-6">
+ <input type="text" class="contact-con__form__input ">
+  <div class="underline"></div>
+
+   <label for="">phone</label>
+
+        </div>
+     </div>
+
+<div class="m col-12">
+      <input type="text" class="contact-con__form__input message">
+        <div class="underline"></div>
+ <label for="">Message</label>
+    </div>
+
+      <button class="contact-con__form__button">
+        submit
+      </button>
+  </div>
+  <footer>
+        <div class="footer" style="margin-top: 5vh;" >
           <div class="container">
             <!-- <div class="logo-mini"><img src="./favicon.png" alt="" /></div>
           </div> -->
@@ -775,9 +799,14 @@
             
             </ul>
           </div>
+  </div>
+
         </div>
       </footer>
-    </div>
+</div>
+</div>
+
+   
     <script src="./script.js"></script>
 
     <!-- JavaScript Bundle with Popper -->
@@ -788,5 +817,8 @@
     ></script>
 
 <!-- ddfd -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<script src="./projects.js"></script>
   </body>
 </html>

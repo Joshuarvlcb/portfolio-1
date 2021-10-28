@@ -1,0 +1,281 @@
+.contact {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact h1 {
+  font-weight: bold;
+}
+
+.contact-con {
+  height: 450px;
+  display: flex;
+}
+
+.contact-con__info {
+  display: flex;
+  flex: 0 0 40%;
+  height: 100%;
+  background-color: #5b1b80;
+  flex-direction: column;
+}
+
+.contact-con__info__title {
+  letter-spacing: 1px;
+  font-size: 29px;
+  margin-left: 20px;
+  margin-top: 30px;
+  padding-bottom: 1px;
+  text-align: left;
+  width: 100%;
+  padding-right: 40px;
+}
+
+.contact-con__info__para {
+  text-align: left;
+  width: 100%;
+  margin-left: 20px;
+  padding-right: 40px;
+  color: rgba(255, 255, 255, 0.644);
+  margin-bottom: 60px;
+}
+
+.contact-con__info__info__list {
+  margin-bottom: 33px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-con__info__info__list li {
+  list-style: none;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.contact-con__form {
+  padding: 0 50px;
+  flex-direction: column;
+  display: flex;
+  flex: 0 0 60%;
+  align-items: center;
+  height: 100%;
+  background-color: #e7e7e7;
+}
+
+.contact-con__form__title {
+  color: #5b1b80;
+  margin-top: 30px;
+  font-size: 29px;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-con__form__para {
+  color: black;
+  margin-bottom: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.contact-con__form__actual {
+  margin-top: 50px;
+}
+
+.contact-con__form__input {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #5c5c5c;
+  background-color: transparent;
+  outline: none;
+}
+
+.contact-con__form__button {
+  margin-top: 40px;
+  align-self: flex-end;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 25px rgba(121, 31, 77, 0.5);
+}
+
+.input-boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.i {
+  position: relative;
+}
+
+.i label {
+  position: absolute;
+  left: 10px;
+  bottom: 35px;
+  color: #525252;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.i input:focus ~ label {
+  transform: translateY(-20px);
+  color: black;
+}
+
+.i .underline {
+  position: absolute;
+  bottom: 25px;
+  height: 2px;
+  width: 96%;
+}
+
+.i .underline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 96%;
+  background: #8e3ef8;
+  transition: transform 0.2s ease;
+  transform: scaleX(0);
+}
+
+.i input:focus ~ .underline:before {
+  transform: scaleX(1);
+}
+
+.m {
+  position: relative;
+}
+
+.m label {
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0px;
+  bottom: 35px;
+  color: #525252;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.m input:focus ~ label {
+  transform: translateY(-20px);
+  color: black;
+}
+
+.m .underline {
+  position: absolute;
+  bottom: 25px;
+  height: 2px;
+  width: 100% !important;
+}
+
+.m .underline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100% !important;
+  background: #bd94f3;
+  transition: transform 0.2s ease;
+  transform: scaleX(0);
+}
+
+.m input:focus ~ .underline:before {
+  transform: scaleX(1);
+}
+
+.message {
+  width: 100%;
+}
+
+.last {
+  margin-bottom: 10px;
+}
+
+.phone,
+.email,
+.location {
+  font-size: 34px;
+  margin-right: 20px;
+}
+
+footer .footer {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  height: 130px;
+  width: 100%;
+  background: linear-gradient(to right, #44175e, #8e32cc);
+}
+
+footer .links-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 130px;
+  align-items: center;
+}
+
+footer ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+footer ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+}
+
+footer ul .resume {
+  padding-top: 18px;
+}
+
+footer ul .resume button {
+  background-color: white;
+  color: #ffffff;
+  outline: none;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
+footer .email {
+  border-top: 2px solid white;
+  color: white;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.resume-btn {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 19px;
+  transition: all ease 0.2s;
+}
+
+.resume-btn:hover {
+  color: #5e0656;
+}
+/*# sourceMappingURL=contact.min.css.map */
