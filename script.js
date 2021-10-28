@@ -446,7 +446,13 @@ back.addEventListener("click", (e) => {
     para.style.opacity = "100";
   }, 200);
 });
-
+document.addEventListener('click',(e) => {
+  if(e.target.classList.contains('nav__link')){
+    navbar.classList.add("none");
+    gradient.classList.remove("none");
+    hamone.classList.remove("open");
+    navbar.style.left = "-100%";  }
+})
 document.addEventListener("DOMContentLoaded", () => {
   let name = document.createElement("p");
   let para = document.createElement("p");

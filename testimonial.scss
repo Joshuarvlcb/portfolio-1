@@ -1,7 +1,8 @@
 .testimonial {
-  height: 200vh;
+  min-height: 200vh;
   width: 100vw;
   display: flex;
+  position: relative;
   flex-direction: column;
   background-image: linear-gradient(
       to right,
@@ -11,29 +12,25 @@
     url(https://images.pexels.com/photos/5997286/pexels-photo-5997286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-position: center;
   color: white;
-  position: relative;
   h1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
+    margin: 4rem 3rem;
+    text-align: center;
   }
 }
 .testi-con {
   flex: 0 0 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 100%;
   &__actual {
     position: relative;
     width: 60vw;
-    height: 600px;
+    min-height: 600px;
+    height: auto;
     display: flex;
-    flex-direction: row;
     background-color: rgb(231, 231, 231);
   }
   &__pic {
@@ -53,20 +50,20 @@
       background-position: center;
     }
   }
-  &__content::before {
+  &__content__para::before {
     content: "\201C";
     font-size: 10rem;
     position: absolute;
-    top: 2rem;
-    left: 2rem;
-    color: #610c4fa4;
+    top: -9.5rem;
+    left: 0rem;
+    color: #46163ba4;
   }
-  &__content::after {
+  &__content__para::after {
     content: "\201C";
     font-size: 10rem;
     position: absolute;
-    bottom: -1rem;
-    right: 4rem;
+    bottom: -13rem;
+    right: 1rem;
     color: #400d7aa2;
     transform: rotateY(180deg);
   }
@@ -81,6 +78,7 @@
     align-items: center;
     flex-direction: column;
     &__para {
+      position: relative;
       display: inline;
       line-height: 2;
       transition: opacity 0.4s ease-in;
@@ -132,4 +130,59 @@
   font-size: 50px;
   padding-right: 5px;
   box-shadow: 0 2px 25px rgba(121, 31, 77, 0.5);
+}
+// flex-direction: column;
+@media only screen and (max-width: 900px) {
+  .testi-con{
+    &__content__para::before {
+      content: "\201C";
+      font-size: 7rem;
+      position: absolute;
+      top: -7rem;
+      left: 0rem;
+      color: #610c4fa4;
+    }
+    &__content__para::after {
+      content: "\201C";
+      font-size: 7rem;
+      position: absolute;
+      bottom: -10rem;
+      right: 0rem;
+      color: #400d7aa2;
+      transform: rotateY(180deg);
+    }
+    &__actual{
+      flex-direction: column;
+      min-height: 800px;
+      font-size: .9rem;
+
+
+    }
+    &__content{
+      padding-left:30px ; 
+      padding-right:30px ; 
+      padding-top:0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding-bottom:0px ;
+    
+
+      &__name{
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+    &__pic{
+      padding: 30px;
+    }
+  }
+  .next{
+    height: 55px;
+    width: 55px;
+  }
+  .back{
+    height: 55px;
+    width: 55px;
+  }
 }
