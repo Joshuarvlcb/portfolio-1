@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  flex-direction: column;
+  margin-bottom: 10rem;
 }
 .contact h1 {
   font-weight: bold;
@@ -190,6 +191,16 @@
   margin-right: 20px;
 }
 
+@media only screen and (max-width: 900px) {
+  .contact-con {
+    flex-direction: column;
+    min-height: 550px;
+    height: auto;
+  }
+  .contact-con__form__button {
+    margin: 3rem 0;
+  }
+}
 footer .footer {
   position: absolute;
   bottom: -100px;

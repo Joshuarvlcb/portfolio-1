@@ -93,6 +93,10 @@
   background-image: url(calc.png);
 }
 
+.card-header.cat {
+  background-image: url(./musicat-photo.png);
+}
+
 .tools-container.mastermind-color {
   background-color: #138db6;
 }
