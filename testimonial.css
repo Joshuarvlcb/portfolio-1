@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .testimonial {
   height: 200vh;
   width: 100vw;
@@ -8,9 +9,7 @@
   color: white;
   position: relative;
 }
-
 .testimonial h1 {
-  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 50px;
@@ -26,7 +25,6 @@
   align-items: center;
   height: 100%;
 }
-
 .testi-con__actual {
   position: relative;
   width: 60vw;
@@ -35,31 +33,27 @@
   flex-direction: row;
   background-color: #e7e7e7;
 }
-
 .testi-con__pic {
   flex: 0 0 40%;
   height: 100%;
   padding: 50px;
 }
-
 .testi-con__pic__image {
   background-image: linear-gradient(to right, rgba(177, 61, 177, 0.596), rgba(141, 82, 153, 0.562)), url(https://images.pexels.com/photos/4114735/pexels-photo-4114735.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-size: cover;
   height: inherit;
   background-position: center;
 }
-
 .testi-con__content::before {
-  content: "\201C";
+  content: "“";
   font-size: 10rem;
   position: absolute;
   top: 2rem;
   left: 2rem;
   color: #610c4fa4;
 }
-
 .testi-con__content::after {
-  content: "\201C";
+  content: "“";
   font-size: 10rem;
   position: absolute;
   bottom: -1rem;
@@ -67,7 +61,6 @@
   color: #400d7aa2;
   transform: rotateY(180deg);
 }
-
 .testi-con__content {
   position: relative;
   flex: 0 0 6;
@@ -79,7 +72,6 @@
   align-items: center;
   flex-direction: column;
 }
-
 .testi-con__content__para {
   display: inline;
   line-height: 2;
@@ -87,7 +79,6 @@
   opacity: 0;
   margin-top: 20px;
 }
-
 .testi-con__content__name {
   margin-top: 35px;
   text-align: left;
@@ -132,5 +123,4 @@
   font-size: 50px;
   padding-right: 5px;
   box-shadow: 0 2px 25px rgba(121, 31, 77, 0.5);
-}
-/*# sourceMappingURL=testimonial.min.css.map */
+}/*# sourceMappingURL=testimonial.css.map */
