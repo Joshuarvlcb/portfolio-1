@@ -62,11 +62,17 @@
 .heading-text h3.mastermind {
   color: rgb(19, 141, 182);
 }
+.quiz-text {
+  color: rgb(255, 100, 185) !important;
+}
 .heading-text h3.todo {
   color: rgb(145, 28, 110);
 }
 .card-header.mastermind {
-  background-image: url(mastermind.png);
+  background-image: url(./mastermind.png);
+}
+.card-header.sudoku {
+  background-image: url(./sudoku.png);
 }
 .card-header.todo {
   background-image: url(todo.png);
@@ -78,6 +84,18 @@
 }
 .card-header.calc {
   background-image: url(calc.png);
+}
+.card-header.cat {
+  background-image: url(./musicat-photo.png);
+}
+.card-header.orange {
+  background-image: url(./quicksort.png);
+}
+.card-header.pop {
+  background-image: url(./popcon-img.png);
+}
+.card-header.vida {
+  background-image: url(./pura-vida-img.png);
 }
 .tools-container.mastermind-color {
   background-color: rgb(19, 141, 182);
@@ -111,7 +129,7 @@
   background-position: center;
 }
 .card-header.quiz {
-  background-image: url(quiz.png);
+  background-image: url(./quiz-pic.png);
 }
 .card-header.tic {
   background-size: cover;
@@ -158,26 +176,45 @@
 
   padding: 0;
 }
+.react {
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+.express {
+  font-size: 20px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+.heading-text h3 {
+  color: rgb(6, 139, 84);
+}
+
+.tools-container.musicat {
+  background-color: rgb(3, 56, 34);
+}
 .tools-container .css {
   border-left: solid 1px black;
+  border-right: solid 1px black;
   height: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 40%;
   font-size: 20px;
   text-transform: uppercase;
-  display: flex;
   align-items: center;
-  padding-left: 22px;
 }
 .tools-container .js {
-  border-left: solid 1px black;
   height: 100%;
-  padding-left: 25px;
   text-align: center;
   font-size: 20px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
-  padding-right: 8px;
 }
 .tools-container .jquery {
   border-left: solid 1px black;
@@ -195,23 +232,24 @@
 .html.mastermind-tool {
   padding: 0px;
 }
-.css.mastermind-tool {
-  padding-left: 22px;
-}
-.js.mastermind-tool {
-  padding-left: 25px;
-}
+// .css.mastermind-tool {
+//   margin-left: 10px !important;
+//   margin-right: 30px !important;
+// }
+// .js.mastermind-tool {
+//   padding-left: 25px;
+// }
 
-.html.quiz {
-  padding-left: 20px;
-  padding-right: 15px;
-}
+// .html.quiz {
+//   padding-left: 20px;
+//   padding-right: 15px;
+// }
 .css.quiz {
   padding: 0px 5px;
 }
-.js.quiz {
-  padding: 0 5px;
-}
+// .js.quiz {
+//   padding: 0 5px;
+// }
 
 .back-card {
   transform: rotateY(180deg);
@@ -219,7 +257,7 @@
   height: 440px;
   min-width: 290px;
 
-  background-color: rgb(255, 118, 141);
+  background-color: rgb(26, 23, 23);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -241,10 +279,28 @@
 
   a {
     text-decoration: none;
-    color: rgb(255, 118, 141);
+    color: rgb(44, 26, 26);
   }
 }
+.orange-text {
+  color: rgb(248, 112, 0) !important;
+}
+.orange {
+  background-color: rgb(255, 94, 0) !important;
+}
+.popcon-text {
+  color: rgb(255, 81, 81) !important;
+}
 
+.popcon {
+  background-color: rgb(255, 14, 14) !important;
+}
+.puravida-text {
+  color: rgb(30, 111, 218) !important;
+}
+.pura-vida {
+  background-color: rgb(19, 73, 190) !important;
+}
 // @media only screen and (max-height: 700px) {
 //   .projects-title {
 //     padding-top: 50px;

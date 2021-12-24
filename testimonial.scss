@@ -1,5 +1,5 @@
 .testimonial {
-  min-height: 200vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   position: relative;
@@ -133,7 +133,7 @@
 }
 // flex-direction: column;
 @media only screen and (max-width: 900px) {
-  .testi-con{
+  .testi-con {
     &__content__para::before {
       content: "\201C";
       font-size: 7rem;
@@ -151,37 +151,34 @@
       color: #400d7aa2;
       transform: rotateY(180deg);
     }
-    &__actual{
+    &__actual {
       flex-direction: column;
       min-height: 800px;
-      font-size: .9rem;
-
-
+      font-size: 0.9rem;
     }
-    &__content{
-      padding-left:30px ; 
-      padding-right:30px ; 
-      padding-top:0px;
+    &__content {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 0px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      padding-bottom:0px ;
-    
+      padding-bottom: 0px;
 
-      &__name{
+      &__name {
         margin-top: 0;
         margin-bottom: 0;
       }
     }
-    &__pic{
+    &__pic {
       padding: 30px;
     }
   }
-  .next{
+  .next {
     height: 55px;
     width: 55px;
   }
-  .back{
+  .back {
     height: 55px;
     width: 55px;
   }
